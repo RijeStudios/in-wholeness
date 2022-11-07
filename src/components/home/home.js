@@ -1,5 +1,5 @@
 import smile from '../../assets/images/smile.jpg';
-
+import './home.scss'
 function Home() {
     return (
         <main className='home' >
