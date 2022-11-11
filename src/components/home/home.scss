@@ -2,9 +2,9 @@
 @use '../../styles/partials/fonts';
 
 .home {
-    // &__hero {
-
-    // }
+     &__hero {
+        display: flex;
+     }
     margin-top: 2 rem;
     &__hero-image {
         width: 15rem;
