@@ -2,6 +2,10 @@
 @use '../../styles/partials/fonts';
 
 .home {
+    // &__hero {
+
+    // }
+    margin-top: 2 rem;
     &__hero-image {
         width: 15rem;
         height: 15rem;
@@ -35,5 +39,6 @@
     }
     &__text-box {
         margin: 1rem;
+        line-height: 1.5;
     }
 }
