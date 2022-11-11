@@ -1,9 +1,13 @@
 @use '../../styles/partials/colors';
 @use '../../styles/partials/fonts';
+@use '../../styles/partials/mixins';
 
 .home {
      &__hero {
-        display: flex;
+        @include mixins.tablet {
+             display: flex;
+             
+        }
      }
     margin-top: 2 rem;
     &__hero-image {
