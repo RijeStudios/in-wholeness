@@ -25,7 +25,8 @@ function Footer() {
                     </figure>
                 </section>
 
-                <section className='footer__box'>
+                <div className="footer__page-service-container">
+                <section className='footer__box footer__page-service-size'>
                     <h3 className='footer__title'>Pages</h3>
                     <ul className='footer__list'>
                         <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Home</li></a>
@@ -37,7 +38,7 @@ function Footer() {
                     </ul>
                 </section>
 
-                <section className='footer__box'>
+                <section className='footer__box footer__page-service-size'>
                     <h3 className='footer__title'>Services</h3>
                     <ul className='footer__list'>
                         <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Nutrition Consults</li></a>
@@ -45,6 +46,7 @@ function Footer() {
                         <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Lifestyle Coaching</li></a>
                     </ul>
                 </section>
+                </div>
 
                 <section className='footer__box'>
                     <h3 className='footer__title'>Contact</h3>
