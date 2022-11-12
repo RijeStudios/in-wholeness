@@ -38,6 +38,9 @@
 
     &__podcast-image {
         width: 100%;
+        @include mixins.tablet {
+            
+        }
     }
 
     &__social-box {

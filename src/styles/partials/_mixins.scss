@@ -1,0 +1,40 @@
+$tablet-breakpoint: 48rem;
+$desktop-breakpoint: 80rem;
+$large-desktop-breakpoint: 90rem;
+$extra-large-desktop-breakpoint: 105rem;
+$max-desktop-breakpoint: 120rem;
+
+//Media queries for tablet 
+@mixin tablet {
+    @media (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+//Media queries for desktop
+@mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+//Media queries for large desktop
+@mixin largeDesktop {
+    @media (min-width: $large-desktop-breakpoint) {
+        @content;
+    }
+}
+
+//Media queries for extra large desktop
+@mixin extraLargeDesktop {
+    @media (min-width: $extra-large-desktop-breakpoint) {
+        @content;
+    }
+}
+
+// Media queries for max desktop
+@mixin maxLargeDesktop {
+    @media (min-width: $max-desktop-breakpoint ) {
+        @content;
+    }
+}
