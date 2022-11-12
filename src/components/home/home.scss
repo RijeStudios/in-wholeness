@@ -57,4 +57,16 @@
             margin: 1rem 2rem 1rem 1rem;
         }
     }
+    &__line {
+        height: 7rem;
+        border-left: 0.1rem solid colors.$primary-green;
+        left: 45%;
+        position: relative; 
+        top: 0rem;
+        margin: 1rem;  
+        @include mixins.tablet {
+            display: block;
+            left: 75%;
+        }     
+    }
 }

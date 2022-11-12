@@ -22,12 +22,11 @@ function Home() {
                     <button className='home__button' > BOOK APPOINTMENT</button>
                 </article>
             </div>
-
+               
+            </section>
             <div className='home__line' >
 
             </div>
-               
-            </section>
             
         </main>
     )
