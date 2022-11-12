@@ -22,6 +22,10 @@ function Home() {
                     <button className='home__button' > BOOK APPOINTMENT</button>
                 </article>
             </div>
+
+            <div className='home__line' >
+
+            </div>
                
             </section>
             

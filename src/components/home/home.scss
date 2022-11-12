@@ -3,17 +3,22 @@
 @use '../../styles/partials/mixins';
 
 .home {
+    margin-top: 2rem;
      &__hero {
         @include mixins.tablet {
              display: flex;
-             
+             justify-content: center;
+             align-items: center;
         }
      }
-    margin-top: 2 rem;
     &__hero-image {
         width: 15rem;
         height: 15rem;
-        border-radius: 1rem
+        border-radius: 1rem;
+        @include mixins.tablet {
+            width: 20rem;
+            height: 20rem;
+        }
     }
     &__hero-title{
         font-size: 2rem;
@@ -23,6 +28,9 @@
     }
     &__hero-text {
         font-size: 1.5rem;
+        @include mixins.tablet {
+            margin: 1rem 0;
+        }
     }
     &__button-box {
         display: flex;
@@ -41,8 +49,12 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
+  
     &__text-box {
         margin: 1rem;
         line-height: 1.5;
+        @include mixins.tablet {
+            margin: 1rem 2rem 1rem 1rem;
+        }
     }
 }
