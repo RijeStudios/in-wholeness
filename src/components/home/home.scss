@@ -1,8 +1,48 @@
+@use '../../styles/partials/colors';
+@use '../../styles/partials/fonts';
+@use '../../styles/partials/mixins';
 
 .home {
+     &__hero {
+        @include mixins.tablet {
+             display: flex;
+             
+        }
+     }
+    margin-top: 2 rem;
     &__hero-image {
         width: 15rem;
         height: 15rem;
         border-radius: 1rem
+    }
+    &__hero-title{
+        font-size: 2rem;
+        font-weight: 600;
+        color: colors.$primary-green;
+        text-align: center;
+    }
+    &__hero-text {
+        font-size: 1.5rem;
+    }
+    &__button-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    &__button {
+        background-color: colors.$primary-green;
+        color: colors.$primary-white;
+        border-radius: 0.8rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: inherit;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    &__text-box {
+        margin: 1rem;
+        line-height: 1.5;
     }
 }
