@@ -28,20 +28,22 @@ function Home() {
             <div className='home__line' ></div>
             <section className='home__about' >
                 <h2 className='home__about-title' >WHY <span className='home__about-title-gold' >IN WHOLENESS ?</span> </h2>
-                <article>
-                    <ul className='home__list' >
-                        <li className='home__list-item' >Access to Fitness programs</li>
-                        <li className='home__list-item' >Scientific & Holistic approach</li>
-                        <li className='home__list-item' >Support via Life Coaching</li>
-                        <li className='home__list-item' >Personalized Nutrition plan </li>
-                    </ul>
-                </article>
+                <div className='home__about-box' >   
+                    <article>
+                        <ul className='home__list' >
+                            <li className='home__list-item' >Access to Fitness programs</li>
+                            <li className='home__list-item' >Scientific & Holistic approach</li>
+                            <li className='home__list-item' >Support via Life Coaching</li>
+                            <li className='home__list-item' >Personalized Nutrition plan </li>
+                        </ul>
+                    </article>
+                    <figure className='home__why-box' >
+                        <img src={why} className='home__why-image' />
+                    </figure>
+                </div>
                 <article className='home__why-button-box' >
-                    <button className='home__why-button' > WHY IT WORKS</button>
+                        <button className='home__why-button' > WHY IT WORKS</button>
                 </article>
-                <figure className='home__why-box' >
-                    <img src={why} className='home__why-image' />
-                </figure>
             </section>
             
         </main>

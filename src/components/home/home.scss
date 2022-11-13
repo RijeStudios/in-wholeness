@@ -51,7 +51,7 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
-  
+
     &__text-box {
         margin: 1rem;
         line-height: 1.5;
@@ -60,19 +60,28 @@
         }
     }
     &__line {
-        height: 7rem;
+        height: 6rem;
         border-left: 0.1rem solid colors.$primary-green;
         left: 45%;
-        position: relative; 
+        position: relative;
         top: 0rem;
-        margin: 1rem;  
+        margin: 1rem;
         @include mixins.tablet {
             display: block;
+            height: 8rem;
             left: 75%;
-        }     
+        }
     }
 
     // about section
+    
+    &__about-box {
+         @include mixins.tablet {
+             display: flex;
+             justify-content: center;
+             align-content: center;
+         }
+    }
     &__about-title {
         margin: 1rem 2rem;
     }
@@ -89,19 +98,34 @@
         line-height: 1.5;
         text-indent: -0.7rem;
         width: 100%;
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            line-height: 2.5;
+        }
     }
     &__list-item::before {
         content: '〰️';
         margin: 0.3rem;
 
     }
+    &__why-box {
+        width: 15rem;
+        height: 15rem;
+    }
     &__why-image {
         width: 15rem;
         height: 15rem;
         border-radius: 1rem;
+        @include mixins.tablet  {
+            width: 18rem;
+            height: 18rem;
+        }
     }
     &__why-button {
-        margin: 1rem;
-
+        margin: 3rem 1rem;
+    }
+    &__why-button-box {
+        justify-content: left;
+        margin: 1rem 6rem;
     }
 }
