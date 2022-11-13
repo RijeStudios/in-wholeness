@@ -1,6 +1,8 @@
 import './testimonials.scss';
 import quotation from '../../assets/images/quotation-marks.png';
 import testimony_esther from '../../assets/images/testimony-esther.png';
+import left_arrow from '../../assets/images/left_arrow.png';
+import right_arrow from '../../assets/images/right_arrow.png';
 
 function Testimonials() {
     return(
@@ -15,9 +17,9 @@ function Testimonials() {
                     </section>
                 </section>
 
-                <section  className='testimonials__arrows'>
-                    <span></span>
-                    <span>&#8594;</span>
+                <section  className='testimonials__arrow-box'>
+                    <a className='testimonials__arrow'><img src={left_arrow} alt='left arrow' /></a>
+                    <a className='testimonials__arrow'><img src={right_arrow} alt='right arrow' /></a>
                 </section>
 
                 <section className='testimonials__testimonies'>
