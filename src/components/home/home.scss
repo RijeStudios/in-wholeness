@@ -76,14 +76,19 @@
     // about section
     
     &__about-box {
+        display: block;
+        
+             
          @include mixins.tablet {
              display: flex;
              justify-content: center;
              align-content: center;
          }
     }
-    &__about-title {
+    &__about-title,
+    &__indigenous-title {
         margin: 1rem 2rem;
+        text-align: center;
     }
     &__about-title-gold {
         color: colors.$primary-gold;
@@ -122,10 +127,33 @@
         }
     }
     &__why-button {
-        margin: 3rem 1rem;
+        padding: 1rem;
     }
     &__why-button-box {
-        justify-content: left;
-        margin: 1rem 6rem;
+        justify-content: center;
+        @include mixins.tablet {
+            margin: 2rem 2rem 2rem 4rem;
+            justify-content: left;
+         }
     }
+    &__indigenous{
+        margin: 1rem;
+    }
+    &__indigenous-title {
+        @include mixins.tablet {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__indigenous-text {
+        margin: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-align: center;
+        @include mixins.tablet {
+            margin: 1rem 2rem 1rem 4rem;
+            font-size: 1.5rem;
+        }
+    }
+
 }

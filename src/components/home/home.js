@@ -45,6 +45,15 @@ function Home() {
                         <button className='home__why-button' > WHY IT WORKS</button>
                 </article>
             </section>
+            <section className='home__indigenous' >
+                <h3 className='home__indigenous-title'> INDIGENOUS LAND <span className='home__about-title-gold' >ACKNOWLEDGEMENT</span></h3>
+                <p className='home__indigenous-text' > We acknowledge the traditional custodians of the land
+                    on which we work and live. We pay our respects to Elders 
+                    past, present and emerging. We acknowledge that sovereignty was never 
+                    ceded and pay our respects to the First Nations people of this country and to their cultures,
+                    and to Elders both past and present.
+                </p>
+            </section>
             
         </main>
     )
