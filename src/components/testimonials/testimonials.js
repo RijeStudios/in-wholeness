@@ -13,7 +13,7 @@ function Testimonials() {
                         <img src={quotation} className='testimonials__quotation-img' alt='Image of quotation marks to represent testimonials' />
                     </figure>
                     <section className='testimonials__title'>
-                        <h1>Clients<br/>testimonials</h1>
+                        <h1>Clients testimonials</h1>
                     </section>
                 </section>
 
@@ -28,6 +28,7 @@ function Testimonials() {
                             <img src={testimony_esther} className='testimonials__testimony-img' alt='image of person delivering testimonial' />
                         </figure>
                         <section className='testimonials__testimony-box'>
+                            <p className="testimonials__testimonial-name">Esther Hills</p>
                             <p>Nam non lorem eget urna lacinia facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
                                 per inceptos himenaeos. Aliquam nec sem ac turpis eleifend imperdiet. Duis accumsan et turpis ultricies elementum. 
                                 Nullam ac velit quam. Nam id tristique metus, vitae facilisis purus. Fusce at imperdiet erat. Nunc porttitor augue 
