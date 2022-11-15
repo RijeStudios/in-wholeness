@@ -19,17 +19,32 @@
             width: 20rem;
             height: 20rem;
         }
+        @include mixins.desktop {
+            width: 25rem;
+            height: 25rem;
+        }
     }
     &__hero-title{
         font-size: 2rem;
         font-weight: 600;
         color: colors.$primary-green;
         text-align: center;
+        @include mixins.desktop {
+            font-size: 3rem;
+        }
     }
     &__hero-text {
         font-size: 1.5rem;
         @include mixins.tablet {
             margin: 1rem 0;
+        }
+        @include mixins.desktop {
+            font-size: 1.8rem;
+        }
+    }
+    &__main-box {
+        @include mixins.desktop {
+            width: 40%;
         }
     }
     &__button-box,
@@ -50,6 +65,9 @@
         border: none;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+        @include mixins.desktop {
+            padding: 1rem 1.5rem;
+        }
     }
 
     &__text-box {
@@ -71,6 +89,10 @@
             height: 8rem;
             left: 75%;
         }
+        @include mixins.desktop {
+            height: 10rem;
+            left: 70%;
+        }
     }
 
     // about section
@@ -89,6 +111,9 @@
     &__indigenous-title {
         margin: 1rem 2rem;
         text-align: center;
+        @include mixins.desktop {
+            font-size: 2rem;
+        }
     }
     &__about-title-gold {
         color: colors.$primary-gold;
@@ -100,12 +125,16 @@
     }
     &__list-item {
         font-size: 1.2rem;
-        line-height: 1.5;
+        line-height: 1.8;
         text-indent: -0.7rem;
         width: 100%;
         @include mixins.tablet {
             font-size: 1.5rem;
             line-height: 2.5;
+        }
+        @include mixins.desktop {
+            font-size: 1.8rem;
+            line-height: 2.8;
         }
     }
     &__list-item::before {
@@ -125,9 +154,13 @@
             width: 18rem;
             height: 18rem;
         }
+        @include mixins.desktop {
+            width: 20rem;
+            height: 20rem;
+        }
     }
     &__why-button {
-        padding: 1rem;
+        padding: 0.7rem 1rem;
     }
     &__why-button-box {
         justify-content: center;
@@ -135,11 +168,19 @@
             margin: 2rem 2rem 2rem 4rem;
             justify-content: left;
          }
+         @include mixins.desktop {
+            justify-content: center;
+         }
     }
     &__indigenous{
-        margin: 1rem;
+        margin: 2rem 1rem;
+        @include mixins.tablet {
+            margin: 4rem 2rem;
+        }
     }
     &__indigenous-title {
+        font-size: 1.4rem;
+        letter-spacing: 0.05rem;
         @include mixins.tablet {
             font-size: 1.5rem;
         }
@@ -148,11 +189,16 @@
     &__indigenous-text {
         margin: 1rem;
         font-size: 1.2rem;
-        line-height: 1.5;
+        line-height: 1.8;
         text-align: center;
         @include mixins.tablet {
             margin: 1rem 2rem 1rem 4rem;
             font-size: 1.5rem;
+        }
+        @include mixins.desktop {
+            font-size: 1.8rem;
+            width: 70%;            
+            margin: 1rem;
         }
     }
 
