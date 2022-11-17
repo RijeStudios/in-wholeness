@@ -1,6 +1,8 @@
 import smile from '../../assets/images/smile.jpg';
 import why from '../../assets/images/why.jpg' ;
-import './home.scss'
+import './home.scss';
+import Testimonials from '../testimonials/testimonials';
+
 function Home() {
     return (
         <main className='home' >
@@ -27,7 +29,11 @@ function Home() {
             </section>
             <div className='home__line' ></div>
             <section className='home__about' >
+
+                <div>
                 <h2 className='home__about-title' >WHY <span className='home__about-title-gold' >IN WHOLENESS ?</span> </h2>
+                </div>
+
                 <div className='home__about-box' >   
                     <article>
                         <ul className='home__list' >
@@ -41,10 +47,12 @@ function Home() {
                         <img src={why} className='home__why-image' />
                     </figure>
                 </div>
+                
                 <article className='home__why-button-box' >
                         <button className='home__why-button' > WHY IT WORKS</button>
                 </article>
             </section>
+            <Testimonials/>
             <section className='home__indigenous' >
                 <h3 className='home__indigenous-title'> INDIGENOUS LAND <span className='home__about-title-gold' >ACKNOWLEDGEMENT</span></h3>
                 <p className='home__indigenous-text' > We acknowledge the traditional custodians of the land

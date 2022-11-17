@@ -13,7 +13,7 @@ function Testimonials() {
                         <img src={quotation} className='testimonials__quotation-img' alt='Image of quotation marks to represent testimonials' />
                     </figure>
                     <section className='testimonials__title'>
-                        <h1>Clients<br/>testimonials</h1>
+                        <h1>Clients<br/>Testimonials</h1>
                     </section>
                 </section>
 
