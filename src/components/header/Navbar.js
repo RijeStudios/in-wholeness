@@ -1,18 +1,27 @@
 import React, {Component} from "react";
+import {MenuItems} from "./MenuItems";
 
 class Navbar extends Component {
     render() {
         return (
         <nav className="navbar">
             <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Genetic Testing</a></li>
-            <li><a href="#">Speaking</a></li>
-            <li><a href="#">Contact</a></li>
+                {MenuItems.map((item, index)=> {
+                    return (
+                        <li key={index} >
+                            <a className={item.cName} href={item.url} > 
+                                {item.title}
+                            </a>
+                        </li>
+
+                    )
+                }) 
+                
+                }
+                  
             </ul>
         </nav>
         );
     }
 }
-
+export default Navbar;
