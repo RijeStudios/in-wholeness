@@ -1,11 +1,18 @@
+@use '../../styles/partials/mixins';
 
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    @include mixins.tablet {
+        justify-content:flex-start;
+    }
     &__logo {
         width: 12rem;
         margin: 1rem;
+        @include mixins.tablet {
+            width: 15rem;
+            margin: 1rem 1rem 1rem 2rem;
+        }
     }
 }

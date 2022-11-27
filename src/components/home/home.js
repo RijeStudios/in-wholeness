@@ -27,7 +27,9 @@ function Home() {
                 </div>
                
             </section>
-            <div className='home__line' ></div>
+            <div className='home__line-box' >
+                <div className="home__line"></div>
+            </div>
             <section className='home__about' >
 
                 <div>
@@ -44,7 +46,7 @@ function Home() {
                         </ul>
                     </article>
                     <figure className='home__why-box' >
-                        <img src={why} className='home__why-image' />
+                        <img src={why} className='home__why-image' alt='about in wholeness' />
                     </figure>
                 </div>
                 
