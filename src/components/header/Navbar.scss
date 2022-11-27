@@ -1,0 +1,16 @@
+@use '../../styles/partials/colors';
+@use '../../styles/partials/fonts';
+@use '../../styles/partials/mixins';
+
+.navbar {
+    background-color: colors.$primary-white;
+    height: 5rem;
+
+    &__list-item {
+        list-style-type: none;
+    }
+}
+
+.nav-links {
+    text-decoration: none;
+}
