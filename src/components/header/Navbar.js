@@ -15,7 +15,7 @@ class Navbar extends Component {
             <section className="navbar__icon" onClick={this.handleClick} >
                 <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
             </section>
-            <ul className='' >
+            <ul className={this.state.clicked ? 'nav__list active' : 'nav__list' }>
                 {MenuItems.map((item, index)=> {
                     return (
                         <li key={index} className="navbar__list-item" >
