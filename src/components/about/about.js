@@ -1,6 +1,7 @@
 import work from '../../assets/images/work.jpg';
 import why from '../../assets/images/why.jpg' ;
 import smile from '../../assets/images/smile.jpg';
+import christie from '../../assets/images/christie.jfif';
 function About() {
 
   return (
@@ -48,6 +49,22 @@ function About() {
                 We are with you, even when it gets hard
             </h4>
         </section>
+        <section>
+            <a> BOOK APPOINTMENT</a>
+        </section>
+        <article>
+            <h2>ABOUT <span>OUR FOUNDER</span></h2>
+            <figure>
+                <img src={christie} alt='founder of In wholeness' />
+            </figure>
+            <h3> Christie Noua is a board certified nutritionist, personal coach and
+                registered psychotherapist(qualifying).
+            </h3>
+            <h4>Clinical expertise:</h4>
+            <h5>Digestive health, endocrine disorders
+                hormonal and mental issues
+            </h5>
+        </article>
     </main>
   );
 }
