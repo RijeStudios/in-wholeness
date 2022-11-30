@@ -3,12 +3,19 @@
 @use '../../styles/partials/mixins';
 
 .home {
-    margin-top: 2rem;
+    margin-top: 7rem;
+    @include mixins.tablet {
+        margin-top: 9rem;
+    }
+    @include mixins.desktop {
+        margin-top: 12rem;
+    }
      &__hero {
         @include mixins.tablet {
              display: flex;
              justify-content: center;
              align-items: center;
+             margin: 1rem;
         }
         @include mixins.desktop {
             margin: 0 0 0 5rem;
@@ -135,7 +142,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin: 0 0 0 5rem;
+            margin: 0rem;
         }
     }
     
@@ -227,8 +234,11 @@
             width: 100%;
         }
         @include mixins.desktop {
-
-                }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__indigenous-title {
         font-size: 1.4rem;
@@ -239,7 +249,7 @@
         @include mixins.desktop {
             font-size: 2.5rem;
             text-align: center;
-            padding: 0 18rem 0 0
+            
         }
     }
 
@@ -250,6 +260,7 @@
         text-align: center;
         @include mixins.tablet {
             font-size: 1.5rem;
+            margin: 1rem 2rem;
         }
         @include mixins.desktop {
             font-size: 1.8rem;

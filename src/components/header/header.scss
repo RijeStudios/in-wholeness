@@ -1,18 +1,33 @@
 @use '../../styles/partials/mixins';
+@use '../../styles/partials/colors';
 
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: colors.$primary-white;
+    width: 100%;
     @include mixins.tablet {
         justify-content:flex-start;
+    }
+    @include mixins.desktop {
+        justify-content: space-between;
+    }
+    @include mixins.maxLargeDesktop {
+        justify-content: flex-start;
     }
     &__logo {
         width: 12rem;
         margin: 1rem;
         @include mixins.tablet {
             width: 15rem;
-            margin: 1rem 1rem 1rem 2rem;
+            margin: 1rem;
+        }
+        @include mixins.desktop {
+            width: 30rem;
+            margin: 1rem 3rem;
         }
     }
 }
