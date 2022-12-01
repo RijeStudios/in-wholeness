@@ -16,7 +16,6 @@ function App() {
         <Route path='/genetictesting' component='' />
         <Route path='/speaking' component='' />
         <Route path='/contact' component='' />
-      <Home/>
       <About/>
       <Footer/>
    

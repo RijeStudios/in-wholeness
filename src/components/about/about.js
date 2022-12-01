@@ -9,7 +9,7 @@ function About() {
     <main className='about' >
 
         <section className='about__header' >
-            <h1 className='about__title' >A Holistical & Clinical approach</h1>
+            <h1 className='about__title' >A Holistical and Clinical approach</h1>
                 <h2 className='about__company' > In Wholeness uses a holistic approach to get the full 
                 picture of your health. We use genetic tests to ensure
                 your plan is tailored to your needs.
@@ -51,22 +51,24 @@ function About() {
             </h4>
         </section>
 
-        <section>
-            <a> BOOK APPOINTMENT</a>
+        <section className='about__button-box'>
+            <a className='about__button' > BOOK APPOINTMENT</a>
         </section>
-        <article>
-            <h2>ABOUT <span>OUR FOUNDER</span></h2>
-            <figure>
-                <img src={christie} className='about__image' alt='founder of In wholeness' />
+
+        <article className='about__founder' >
+            <h2 className='about__founder-title' >ABOUT <span className='about__founder-title--gold'>OUR FOUNDER</span></h2>
+            <figure className='about__image-box'>
+                <img src={christie} className='about__image-founder' alt='founder of In wholeness' />
             </figure>
-            <h3> Christie Noua is a board certified nutritionist, personal coach and
-                registered psychotherapist(qualifying).
+            <h3 className='about__ceo' > Christie Noua is a board certified nutritionist, personal coach and
+                registered psychotherapist (qualifying).
             </h3>
-            <h4>Clinical expertise:</h4>
-            <h5>Digestive health, endocrine disorders
-                hormonal and mental issues
+            <h4 className='about__clinical' >Clinical expertise:</h4>
+            <h5 className='about__clinical-tags'>Digestive health, Endocrine disorders,
+                Hormonal and Mental issues
             </h5>
         </article>
+
     </main>
   );
 }

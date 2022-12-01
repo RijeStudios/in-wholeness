@@ -18,7 +18,7 @@
              margin: 1rem;
         }
         @include mixins.desktop {
-            margin: 0 0 0 5rem;
+            
             width: 100%;
         }
         @include mixins.largeDesktop {

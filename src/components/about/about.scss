@@ -4,23 +4,51 @@
 
 
 .about {
+    &__header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @include mixins.desktop {
+            margin: auto;
+        }
+    }
     &__title {
-        margin: 1rem 2rem;
+        margin: 2rem;
         text-align: center;
         font-size: 1.8rem;
         color: colors.$primary-green;
+
+        @include mixins.tablet {
+            font-size: 3rem;
+        }
     }
     &__company {
         margin: 1rem 2rem;
         text-align: center;
         font-size: 1.2rem;
         line-height: 1.6;
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            margin: 2rem 3rem;
+        }
    }
     &__image {
         width: 17rem;
         height: 20rem;
         border-radius: 3rem;
-        
+        @include mixins.tablet {
+            width: 30rem;
+            height: 35rem;
+        }
+    }
+    &__image-founder{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 1rem;
+        @include mixins.tablet {
+            width: 25rem;
+            height: 25rem;
+        }
     }
     &__image-box {
         display: flex;
@@ -42,6 +70,9 @@
         font-weight: 600;
         color: colors.$primary-gold;
         margin: 1rem;
+        @include mixins.tablet {
+            font-size: 2rem;
+        }
     }
 
     &__who-info,
@@ -50,9 +81,76 @@
         font-size: 1.2rem;
         line-height: 1.6;
         margin: 1rem;
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            margin: 2rem 4rem;
+        }
     }
 
     &__work {
         margin-bottom: 2rem;
+    }
+
+    &__button-box {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 1rem;
+    }
+
+    &__button {
+        background-color: colors.$primary-green;
+        color: colors.$primary-white;
+        border-radius: 0.8rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: inherit;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        @include mixins.tablet {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__founder-title {
+        margin: 6rem 1rem 1rem 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+        @include mixins.tablet {
+            font-size: 2.5rem;
+        }
+    }
+    &__founder-title--gold {
+        color: colors.$primary-gold;
+    }
+    &__ceo,
+    &__clinical {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin: 1rem;
+        text-align: center;
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            margin: 2rem 4rem;
+        }
+    }
+    &__clinical {
+        margin-bottom: 0;
+    }
+    &__clinical-tags {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0rem 1rem 1rem 1rem;
+        color: colors.$primary-gold;
+        letter-spacing: 0.05rem;
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            margin: 0 6rem;
+        }
+    }
+    &__founder {
+        margin-bottom: 5rem;
     }
 }
