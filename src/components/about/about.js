@@ -7,6 +7,7 @@ function About() {
 
   return (
     <main className='about' >
+
         <section className='about__header' >
             <h1 className='about__title' >A Holistical & Clinical approach</h1>
                 <h2 className='about__company' > In Wholeness uses a holistic approach to get the full 
@@ -32,32 +33,31 @@ function About() {
             <img src={why} className='about__image' alt='nutritionist planning diet plan' />
            </figure>
            <h3 className='about__what'> WHAT IS THE ROOT CAUSE?</h3>
-            <h4>
+            <h4 className='about__what-info'>
                 Using the latest tools and practices, we identify the root cause of your condition 
                 and create a personalised care plan.
             </h4>
         </section>
 
 
-        <section>
+        <section className='about__work' >
             <figure className='about__image-box' >
                 <img src={smile} className='about__image' alt='a happy client after a nutrition plan is made' />
             </figure>
-            <h3>
-               We partner with you 
-            </h3>
-            <h4>
+            <h3 className='about__partner'> WE PARTNER WITH YOU </h3>
+            <h4 className='about__partner-info' >
                 Using check-ins and unlimited support.
                 We are with you, even when it gets hard
             </h4>
         </section>
+
         <section>
             <a> BOOK APPOINTMENT</a>
         </section>
         <article>
             <h2>ABOUT <span>OUR FOUNDER</span></h2>
             <figure>
-                <img src={christie} alt='founder of In wholeness' />
+                <img src={christie} className='about__image' alt='founder of In wholeness' />
             </figure>
             <h3> Christie Noua is a board certified nutritionist, personal coach and
                 registered psychotherapist(qualifying).

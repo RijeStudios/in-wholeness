@@ -1,8 +1,58 @@
+@use '../../styles/partials/colors';
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/fonts';
+
 
 .about {
+    &__title {
+        margin: 1rem 2rem;
+        text-align: center;
+        font-size: 1.8rem;
+        color: colors.$primary-green;
+    }
+    &__company {
+        margin: 1rem 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.6;
+   }
     &__image {
         width: 17rem;
-        height: 22rem;
+        height: 20rem;
         border-radius: 3rem;
+        
+    }
+    &__image-box {
+        display: flex;
+        justify-content: center;
+    }
+    &__who,
+    &__who-info,
+    &__what,
+    &__what-info,
+    &__partner,
+    &__partner-info {
+        text-align: center;
+    }
+
+    &__who,
+    &__what,
+    &__partner {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: colors.$primary-gold;
+        margin: 1rem;
+    }
+
+    &__who-info,
+    &__what-info,
+    &__partner-info {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin: 1rem;
+    }
+
+    &__work {
+        margin-bottom: 2rem;
     }
 }
