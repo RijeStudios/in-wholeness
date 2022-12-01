@@ -2,44 +2,46 @@ import work from '../../assets/images/work.jpg';
 import why from '../../assets/images/why.jpg' ;
 import smile from '../../assets/images/smile.jpg';
 import christie from '../../assets/images/christie.jfif';
+import './about.scss';
 function About() {
 
   return (
-    <main>
-        <section >
-            <h1>A Holistical & Clinical approach</h1>
-                <h2> In Wholeness uses a holistic approach to get the full 
+    <main className='about' >
+        <section className='about__header' >
+            <h1 className='about__title' >A Holistical & Clinical approach</h1>
+                <h2 className='about__company' > In Wholeness uses a holistic approach to get the full 
                 picture of your health. We use genetic tests to ensure
                 your plan is tailored to your needs.
                 </h2>
         </section>
-        <section>
-            <figure>
-                <img src={work} alt='woman searching for nutritionist' />
+
+
+        <section className='about__work' >
+            <figure className='about__image-box' >
+                <img src={work} className='about__image' alt='woman searching for nutritionist' />
             </figure> 
-            <h3>
-                WHO ARE YOU?
-            </h3>
-            <h4>
+            <h3 className='about__who' > WHO ARE YOU?</h3>
+            <h4 className='about__who-info' >
                 We spend time getting to know you by genetic testing,
                 lifestyle history, diet analysis and future goals.
             </h4>
         </section>
-        <section>
-           <figure>
-            <img src={why} alt='nutritionist planning diet plan' />
+
+        <section className='about__work' >
+           <figure className='about__image-box' >
+            <img src={why} className='about__image' alt='nutritionist planning diet plan' />
            </figure>
-           <h3>
-                WHAT IS THE ROOT CAUSE?
-            </h3>
+           <h3 className='about__what'> WHAT IS THE ROOT CAUSE?</h3>
             <h4>
                 Using the latest tools and practices, we identify the root cause of your condition 
                 and create a personalised care plan.
             </h4>
         </section>
+
+
         <section>
-            <figure>
-                <img src={smile} alt='a happy client after a nutrition plan is made' />
+            <figure className='about__image-box' >
+                <img src={smile} className='about__image' alt='a happy client after a nutrition plan is made' />
             </figure>
             <h3>
                We partner with you 
