@@ -4,6 +4,12 @@
 
 
 .about {
+    &__row {
+        @include mixins.desktop {
+            display: flex;
+        }
+        
+    }
     &__header {
         display: flex;
         justify-content: center;
@@ -49,10 +55,16 @@
             width: 25rem;
             height: 25rem;
         }
+        @include mixins.desktop {
+            border-radius: 5rem;
+        }
     }
     &__image-box {
         display: flex;
         justify-content: center;
+        @include mixins.largeDesktop {
+            margin: 0;
+        }
     }
     &__who,
     &__who-info,
@@ -124,6 +136,18 @@
     &__founder-title--gold {
         color: colors.$primary-gold;
     }
+    &__founder-box {
+        @include mixins.desktop {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    &__qualifications {
+        @include mixins.desktop {
+            width: 50%;
+        }
+    }
     &__ceo,
     &__clinical {
         font-size: 1.2rem;
@@ -152,5 +176,8 @@
     }
     &__founder {
         margin-bottom: 5rem;
+        @include mixins.desktop {
+            margin-top: 10rem ;
+        }
     }
 }

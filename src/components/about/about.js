@@ -3,7 +3,13 @@ import why from '../../assets/images/why.jpg' ;
 import smile from '../../assets/images/smile.jpg';
 import christie from '../../assets/images/christie.jfif';
 import './about.scss';
+import { useEffect } from 'react';
+
 function About() {
+useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
 
   return (
     <main className='about' >
@@ -16,7 +22,7 @@ function About() {
                 </h2>
         </section>
 
-
+    <article className='about__row' >
         <section className='about__work' >
             <figure className='about__image-box' >
                 <img src={work} className='about__image' alt='woman searching for nutritionist' />
@@ -38,7 +44,7 @@ function About() {
                 and create a personalised care plan.
             </h4>
         </section>
-
+    </article>
 
         <section className='about__work' >
             <figure className='about__image-box' >
@@ -57,16 +63,24 @@ function About() {
 
         <article className='about__founder' >
             <h2 className='about__founder-title' >ABOUT <span className='about__founder-title--gold'>OUR FOUNDER</span></h2>
-            <figure className='about__image-box'>
-                <img src={christie} className='about__image-founder' alt='founder of In wholeness' />
-            </figure>
-            <h3 className='about__ceo' > Christie Noua is a board certified nutritionist, personal coach and
-                registered psychotherapist (qualifying).
-            </h3>
-            <h4 className='about__clinical' >Clinical expertise:</h4>
-            <h5 className='about__clinical-tags'>Digestive health, Endocrine disorders,
-                Hormonal and Mental issues
-            </h5>
+
+            <section className='about__founder-box' >
+                    <figure className='about__image-box'>
+                        <img src={christie} className='about__image-founder' alt='founder of In wholeness' />
+                    </figure>
+
+                <section className='about__qualifications' >
+                    <h3 className='about__ceo' > Christie Noua is a board certified nutritionist, personal coach and
+                        registered psychotherapist (qualifying).
+                    </h3>
+                    <h4 className='about__clinical' >Clinical expertise:</h4>
+                    <h5 className='about__clinical-tags'>Digestive health, Endocrine disorders,
+                        Hormonal and Mental issues
+                    </h5>
+                </section>
+
+            </section>
+            
         </article>
 
     </main>

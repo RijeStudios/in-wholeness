@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 import {MenuItems} from "./MenuItems";
 
 import './Navbar.scss';
@@ -19,10 +20,10 @@ class Navbar extends Component {
                 {MenuItems.map((item, index)=> {
                     return (
                         <li key={index} className="navbar__list-item" >
-                            <a className={item.cName} 
-                                href={item.url} > 
+                            <Link className={item.cName} 
+                                to={item.url} > 
                                 {item.title}
-                            </a>
+                            </Link>
                         </li>
 
                     )

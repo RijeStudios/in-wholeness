@@ -2,8 +2,13 @@ import smile from '../../assets/images/smile.jpg';
 import why from '../../assets/images/why.jpg' ;
 import './home.scss';
 import Testimonials from '../testimonials/testimonials';
+import {useEffect} from 'react';
 
 function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+    
     return (
         <main className='home' >
             <section className='home__hero' > 
