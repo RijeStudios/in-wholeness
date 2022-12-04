@@ -4,6 +4,7 @@ import Home from "./components/home/home";
 import Footer from './components/footer/footer';
 import About from "./components/about/about";
 import Services from './components/services/services';
+import Genetic from './components/genetic/genetic';
 import NotFound from './components/Pages/NotFound';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
        <Route path='/' component={Home} exact  /> 
        <Route path='/about' component={About} />
        <Route path='/services' component={Services} />
-        <Route path='/genetictesting' component='' />
+        <Route path='/genetictesting' component={Genetic} />
         <Route path='/speaking' component='' />
         <Route path='/contact' component='' />
         <Route component={NotFound} />

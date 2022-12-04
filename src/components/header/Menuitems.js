@@ -12,7 +12,7 @@
     },
     {
         title: 'GENETIC TEST',
-        url: '#',
+        url: '/genetictesting',
         cName: 'nav-links'
     },
     {
