@@ -18,6 +18,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-top: 5rem;
         @include mixins.desktop {
             margin-top: 10rem;
         }

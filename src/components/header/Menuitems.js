@@ -7,7 +7,7 @@
     },
     {
         title: 'SERVICES',
-        url: '#',
+        url: '/services',
         cName: 'nav-links'
     },
     {
