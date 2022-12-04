@@ -7,6 +7,9 @@
 .services {
     &__header-box {
         margin-top: 5rem;
+        @include mixins.tablet {
+            margin-top: 10rem;
+        }
     }
     &__title {
         font-size: 2rem;
@@ -14,9 +17,24 @@
         text-align: center;
         margin-bottom: 0;
         margin-top: 1.5rem;
+        @include mixins.tablet {
+            font-size: 2.5rem;
+        }
     }
     &__service {
         margin-bottom: 5rem;
+        @include mixins.tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+        }
+    }
+    &__row {
+        @include mixins.tablet {
+            width: 45%;
+            margin-top: 2rem ;
+        }
     }
     &__study {
         text-align: center;
@@ -25,6 +43,10 @@
         font-weight: 600;
         letter-spacing: 0.05rem;
         line-height: 1.5rem;
+        @include mixins.tablet {
+            font-size: 1.3rem;
+            margin: 2rem auto;
+        }
     }
     &__header {
         display: flex;
@@ -34,16 +56,29 @@
         width: 17rem;
         height: 20rem;
         border-radius: 3rem;
+        @include mixins.tablet {
+            width: 25rem;
+            height: 30rem;
+            border-radius: 4rem;
+        }
     }
     &__image{
         width: 18rem;
         height: 20rem;
         border-radius: 3rem;
+        @include mixins.tablet {
+            width: 100%;
+            border-radius: 4rem;
+        }
     }
     &__image-consult {
         width: 16rem;
         height: 20rem;
         border-radius: 3rem;
+        @include mixins.tablet {
+            width: 100%;
+            border-radius: 4rem;
+        }
     }
     &__image-box {
         display: flex;
@@ -87,6 +122,9 @@
         margin: 2rem 1rem 1rem 1rem;
         text-align: center;
         font-size: 1.8rem;
+        @include mixins.tablet {
+            font-size: 2.5rem;
+        }
     }
     &__title-header--gold {
         color: colors.$primary-gold;

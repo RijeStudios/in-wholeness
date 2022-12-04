@@ -29,7 +29,7 @@ function Services() {
             </section>
 
             <article className='services__service' >
-                <section>
+                <section className='services__row' >
                     <figure className='services__image-box' >
                         <img src={nutritionConsult} className='services__image-consult' alt='man searching for nutritionist' />
                     </figure> 
@@ -38,7 +38,7 @@ function Services() {
                         Get a personalized diet plan using 
                         genetic testing to understand your digestive health.
                     </h4>
-                    <h5 className='services__tag' > Target areas: Food allergies, IBD, Fertility, Pregnancy,
+                    <h5 className='services__tag' > Target areas: Food allergies, IBD, Fertility,
                          Post partum Weight loss, Diabetes, Hormonal health, Meal planning,
                          Genetic testing
                     </h5>
@@ -47,7 +47,7 @@ function Services() {
                     </section>
                 </section>
 
-                <section>
+                <section className='services__row' >
                     <figure className='services__image-box' >
                         <img src={training} className='services__image' alt='person doing personalised workout' />
                     </figure> 
@@ -64,7 +64,7 @@ function Services() {
                     </section>
                 </section>
 
-                <section>
+                <section className='services__row' >
                     <figure className='services__image-box' >
                         <img src={lifeCoaching} className='services__image' alt='person doing a life coaching session' />
                     </figure> 
