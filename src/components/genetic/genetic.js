@@ -1,60 +1,73 @@
 import lifeCoaching from '../../assets/images/lifeCoaching.jpg';
+import geneticTesting from '../../assets/images/geneticTesting.jpg';
+import nutritionConsult from '../../assets/images/nutritionConsult.jpg';
+import './genetic.scss';
 
 function Genetic() {
     return (
-        <main>
-           <article>
-                <section>
-                    <h1> The power of your genes unlocked</h1>
-                    <h3>It's not easy to spot what is wrong
+        <main className='genetic' >
+           <article className='genetic__header-box' >
+                <section className='genetic__header' >
+                    <h1 className='genetic__header-title' > The power of your genes unlocked</h1>
+                    <h3 className='genetic__header-description' >It's not easy to spot what is wrong
                         but with genetic testing, you can connect the dots.
                     </h3>
                 </section>
-                <section>
-                    <figure>
-                        <img src={lifeCoaching} alt='genetic testing' />
+                
+                    <figure className='genetic__header-image-box'>
+                        <img src={lifeCoaching} className='genetic__header-image'  alt='genetic testing' />
                     </figure>
-                </section>
+                
            </article>
+
            <div className='home__line-box' >
                 <div className='home__line'></div>
             </div>
-            <article>
-                <section>
-                    <h2>GENETIC <span> TESTING</span></h2>
+
+            <article className='genetic__reasons' >
+                <section className='genetic__reason-header-box' >
+                    <h2 className='genetic__reason-title' >GENETIC <span className='genetic__reason-title--gold' > TESTING</span></h2>
                 </section>
-                <section>
-                    <h3> Common reasons to seek genetic testing:</h3>
-                    <ul>
-                        <li>Chronic Pain</li>
-                        <li>Fatigue, Stress & Burnout</li>
-                        <li>Insomnia or Sleeping Issues</li>
-                        <li>Weight management</li>
-                        <li>Hormonal Imbalances</li>
-                        <li>Depression, Anxiety & Mood swings</li>
+
+                <section className='genetic__reason-box' >
+                    <h3 className='genetic__reason-header' > Common reasons to seek genetic testing:</h3>
+                    <ul className='genetic__reason-list' >
+                        <li className='genetic__reason-item' >Chronic Pain</li>
+                        <li className='genetic__reason-item' >Fatigue, Stress & Burnout</li>
+                        <li className='genetic__reason-item' >Insomnia or Sleeping Issues</li>
+                        <li className='genetic__reason-item' >Weight management</li>
+                        <li className='genetic__reason-item' >Hormonal Imbalances</li>
+                        <li className='genetic__reason-item' >Depression, Anxiety & Mood swings</li>
                     </ul>
-                    <a> VIEW SAMPLE REPORT</a>
+                    <section className='genetic__reason-button-box' >
+                        <a className='genetic__reason-button' > VIEW SAMPLE REPORT</a>
+                    </section>
+
                 </section>
-                <figure>
-                    <img src='' alt='genetic test results' />
+
+                <figure className='genetic__reason-image-box' >
+                    <img src={geneticTesting} className='genetic__reason-image' alt='genetic test results' />
                 </figure>
+
             </article>
-            <article>
-                <figure>
-                    <img src='' alt='comprehensive genetic test results' />
+
+            <article className='genetic__reasons-hormone' >
+                <figure className='genetic__result-image-box' >
+                    <img src={nutritionConsult} className='genetic__result-image'  alt='comprehensive genetic test results' />
                 </figure>
-                <section>
-                    <h3>Hormonal Health:</h3>
-                    <h5> Using your test results we can assess
+                <section className='genetic__hormone-box' >
+                    <h3 className='genetic__hormone-title' >Hormonal Health:</h3>
+                    <h5 className='genetic__hormone-results' > Using your test results we can assess
                          your issues & create a holistic and personalised plan 
                          that will move you towards wellness.
                     </h5>
-                    <a> BOOK CONSULT</a>
+                    <a className='genetic__hormone-button' > BOOK CONSULT</a>
                 </section>
             </article>
-            <article>
-                <h2> Still have questions ?</h2>
-                <a>SCHEDULE A CALL</a>
+
+            <article className='genetic__question-box' >
+                <h2 className='genetic__questions' > Still have questions ?</h2>
+                <a className='genetic__question-button' >SCHEDULE A CALL</a>
             </article>
         </main>
     )

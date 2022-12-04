@@ -1,0 +1,97 @@
+@use '../../styles/partials/colors';
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/fonts';
+
+.genetic {
+    &__header {
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__header-box {
+        margin: 6.5rem auto 0.5rem auto;
+    }
+
+    &__header-title {
+        font-size: 3rem;
+        text-align: center;
+        color: colors.$primary-green;
+        line-height: 1.4;
+        letter-spacing: 0.05rem;
+        margin: 0 auto;
+    }
+    &__header-description {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        letter-spacing: 0.05rem;
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+    &__header-image,
+    &__reason-image {
+        width: 17rem;
+        height: 23rem;
+        border-radius: 3rem;
+    }
+    &__result-image {
+        width: 18rem;
+        height: 100%;
+        border-radius: 3rem;
+        
+    }
+    &__header-image-box,
+    &__reason-image-box {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 1rem auto;
+    }
+    &__result-image-box {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+    &__reason-header-box {
+        display: flex;
+        justify-content: center;
+    }
+    &__reason-title {
+        font-size: 2rem;
+        letter-spacing: 0.05rem;
+    }
+    &__reason-title--gold {
+        color: colors.$primary-gold;
+    }
+    &__reason-header {
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: 0.05rem;
+        line-height: 1.2;
+    }
+    &__reason-item {
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+        line-height: 1.6;
+    }
+    &__reason-list{
+        margin: 1rem auto;
+    }
+    &__reason-button-box {
+        display: flex;
+        justify-content: center;
+        margin: 2rem auto;
+        
+    }
+    &__reason-button {
+        background-color: colors.$primary-green;
+        color: colors.$primary-white;
+        border-radius: 0.8rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: inherit;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+}
