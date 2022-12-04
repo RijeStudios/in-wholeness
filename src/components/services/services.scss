@@ -1,0 +1,94 @@
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/colors';
+@use '../../styles/partials/fonts';
+
+
+
+.services {
+    &__header-box {
+        margin-top: 5rem;
+    }
+    &__title {
+        font-size: 2rem;
+        color: colors.$primary-green;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 1.5rem;
+    }
+    &__service {
+        margin-bottom: 5rem;
+    }
+    &__study {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        line-height: 1.5rem;
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+    }
+    &__header-image {
+        width: 17rem;
+        height: 20rem;
+        border-radius: 3rem;
+    }
+    &__image{
+        width: 18rem;
+        height: 20rem;
+        border-radius: 3rem;
+    }
+    &__image-consult {
+        width: 16rem;
+        height: 20rem;
+        border-radius: 3rem;
+    }
+    &__image-box {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__type,
+    &__description,
+    &__tag {
+        text-align: center;
+        letter-spacing: 0.05rem;
+        line-height: 1.4rem;
+    }
+    &__description,
+    &__tag {
+        width: 80%;
+        margin: 1rem auto;
+    }
+    &__tag{
+        color: colors.$primary-green ;
+    }
+    &__button-box {
+        display: flex;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+    &__button{
+        background-color: colors.$primary-green;
+        color: colors.$primary-white;
+        border-radius: 0.8rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: inherit;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    &__title-header {
+        margin: 2rem 1rem 1rem 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    &__title-header--gold {
+        color: colors.$primary-gold;
+    }
+}
