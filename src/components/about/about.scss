@@ -7,15 +7,19 @@
     &__row {
         @include mixins.desktop {
             display: flex;
+            margin: 2rem auto;
+            height: 100%;
         }
         
     }
+   
+    
     &__header {
         display: flex;
         justify-content: center;
         flex-direction: column;
         @include mixins.desktop {
-            margin: auto;
+            margin-top: 10rem;
         }
     }
     &__title {
@@ -35,16 +39,24 @@
         line-height: 1.6;
         @include mixins.tablet {
             font-size: 1.5rem;
-            margin: 2rem 3rem;
+            margin: 2rem auto;
+            width: 50%;
         }
+       
    }
     &__image {
         width: 17rem;
         height: 20rem;
         border-radius: 3rem;
         @include mixins.tablet {
-            width: 30rem;
+            width: 28rem;
             height: 35rem;
+        }
+    }
+    &__image-smile {
+        @include mixins.desktop {
+            width: 25rem;
+            height: 25rem;
         }
     }
     &__image-founder{
@@ -131,6 +143,9 @@
         font-size: 1.8rem;
         @include mixins.tablet {
             font-size: 2.5rem;
+        }
+        @include mixins.desktop {
+            margin: 10rem 1rem 4rem 1rem;
         }
     }
     &__founder-title--gold {

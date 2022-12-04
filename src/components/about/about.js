@@ -23,7 +23,7 @@ useEffect(() => {
         </section>
 
     <article className='about__row' >
-        <section className='about__work' >
+        <section className='about__work ' >
             <figure className='about__image-box' >
                 <img src={work} className='about__image' alt='woman searching for nutritionist' />
             </figure> 
@@ -48,7 +48,7 @@ useEffect(() => {
 
         <section className='about__work' >
             <figure className='about__image-box' >
-                <img src={smile} className='about__image' alt='a happy client after a nutrition plan is made' />
+                <img src={smile} className='about__image about__image-smile' alt='a happy client after a nutrition plan is made' />
             </figure>
             <h3 className='about__partner'> WE PARTNER WITH YOU </h3>
             <h4 className='about__partner-info' >

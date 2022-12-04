@@ -3,7 +3,7 @@ import Header from "./components/header/header";
 import Home from "./components/home/home";
 import Footer from './components/footer/footer';
 import About from "./components/about/about";
-
+import NotFound from './components/Pages/NotFound';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Route path='/genetictesting' component='' />
         <Route path='/speaking' component='' />
         <Route path='/contact' component='' />
+        <Route component={NotFound} />
       </Switch>
       <Footer/>
    
