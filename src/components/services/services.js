@@ -3,9 +3,13 @@ import nutritionConsult from '../../assets/images/nutritionConsult.jpg';
 import training from '../../assets/images/training.jpg';
 import lifeCoaching from '../../assets/images/lifeCoaching.jpg';
 import './services.scss';
-
+import { useEffect } from 'react';
 
 function Services() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
 
         <main className="services" >
@@ -15,7 +19,7 @@ function Services() {
                     <h1 className='services__title' >We are committed.</h1>
                     <p className='services__study' >98% of our clients see a transformation in the first 6 months *</p>
                 </section>
-                <figure className='services__image-box' >
+                <figure className='services__image-box services__promise' >
                     <img src={why} className='services__header-image' alt='services by in wholeness'  />
                 </figure>
            </article>
