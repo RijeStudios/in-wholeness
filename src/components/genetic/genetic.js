@@ -61,13 +61,17 @@ function Genetic() {
                          your issues & create a holistic and personalised plan 
                          that will move you towards wellness.
                     </h5>
-                    <a className='genetic__hormone-button' > BOOK CONSULT</a>
+                    <section className='genetic__hormone-button-box' >
+                        <a className='genetic__hormone-button' > BOOK CONSULT</a>
+                    </section>
                 </section>
             </article>
 
             <article className='genetic__question-box' >
-                <h2 className='genetic__questions' > Still have questions ?</h2>
-                <a className='genetic__question-button' >SCHEDULE A CALL</a>
+                <h2 className='genetic__questions' > Still have questions?</h2>
+                <section className='genetic__hormone-question-box' > 
+                    <a className='genetic__question-button' >SCHEDULE A CALL</a>
+                </section>
             </article>
         </main>
     )

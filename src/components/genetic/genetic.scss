@@ -3,6 +3,7 @@
 @use '../../styles/partials/fonts';
 
 .genetic {
+    margin: 2rem auto 8rem auto;
     &__header {
         width: 100%;
         margin: 0 auto;
@@ -76,13 +77,15 @@
     &__reason-list{
         margin: 1rem auto;
     }
-    &__reason-button-box {
+    &__reason-button-box,
+    &__hormone-button-box,
+    &__hormone-question-box {
         display: flex;
         justify-content: center;
-        margin: 2rem auto;
-        
+        margin: 2rem auto;  
     }
-    &__reason-button {
+    &__reason-button,
+    &__hormone-button {
         background-color: colors.$primary-green;
         color: colors.$primary-white;
         border-radius: 0.8rem;
@@ -93,5 +96,39 @@
         border: none;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+        letter-spacing: 0.05rem;
+    }
+    &__question-button {
+        background-color: colors.$primary-gold;
+        color: colors.$primary-white;
+        border-radius: 0.8rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: inherit;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        letter-spacing: 0.05rem
+    }
+    &__hormone-title {
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+        text-align: center;
+        margin: 2rem auto;
+    }
+    &__hormone-results {
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+        line-height: 1.6;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    &__questions {
+        font-size: 1.9rem;
+        letter-spacing: 0.03rem;
+        line-height: 1.6;
+        margin: 1rem auto;
+        text-align: center;
     }
 }
