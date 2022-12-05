@@ -1,9 +1,14 @@
 import lifeCoaching from '../../assets/images/lifeCoaching.jpg';
 import geneticTesting from '../../assets/images/geneticTesting.jpg';
 import nutritionConsult from '../../assets/images/nutritionConsult.jpg';
+import { useEffect } from 'react';
 import './genetic.scss';
 
 function Genetic() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <main className='genetic' >
            <article className='genetic__header-box' >
@@ -24,11 +29,11 @@ function Genetic() {
                 <div className='home__line'></div>
             </div>
 
-            <article className='genetic__reasons' >
-                <section className='genetic__reason-header-box' >
+            <section className='genetic__reason-header-box' >
                     <h2 className='genetic__reason-title' >GENETIC <span className='genetic__reason-title--gold' > TESTING</span></h2>
-                </section>
+            </section>
 
+            <article className='genetic__reasons' >
                 <section className='genetic__reason-box' >
                     <h3 className='genetic__reason-header' > Common reasons to seek genetic testing:</h3>
                     <ul className='genetic__reason-list' >

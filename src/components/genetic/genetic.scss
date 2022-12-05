@@ -13,6 +13,12 @@
     }
     &__header-box {
         margin: 6.5rem auto 0.5rem auto;
+        @include mixins.desktop {
+            margin: 15rem auto 0.5rem auto;
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+        }
     }
 
     &__header-title {
@@ -24,6 +30,9 @@
         margin: 0 auto;
         @include mixins.tablet {
             font-size: 3.5rem;
+        }
+        @include mixins.desktop {
+            font-size: 4rem;
         }
     }
     &__header-description {
@@ -37,6 +46,11 @@
             width: 70%;
             line-height: 1.6;
         }
+        @include mixins.desktop {
+            width: 60%;
+            line-height: 1.6;
+            letter-spacing: 0.08rem;
+        }
     }
     &__header-image,
     &__reason-image {
@@ -46,6 +60,10 @@
         @include mixins.tablet {
             width: 25rem;
             height: 30rem;
+        }
+        @include mixins.desktop {
+            width: 28rem;
+            height: 35rem;
         }
     }
     &__result-image {
@@ -94,6 +112,10 @@
             font-size: 2rem;
             line-height: 1.4;
         }
+        @include mixins.desktop {
+            font-size: 2.2rem;
+            line-height: 1.6;
+        }
     }
     &__reason-item {
         font-size: 1.2rem;
@@ -113,8 +135,9 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-           
-            
+        }
+        @include mixins.desktop {
+            width: 95%;
         }
     }
     &__reason-button-box,
@@ -175,6 +198,9 @@
         @include mixins.tablet {
             font-size: 2rem;
         }
+        @include mixins.desktop {
+            font-size: 2.5rem;
+        }
     }
     &__hormone-results {
         font-size: 1.2rem;
@@ -186,6 +212,10 @@
             font-size: 1.5rem;
             line-height: 1.8;
             width: 60%;
+        }
+        @include mixins.desktop {
+            width: 80%;
+            font-size: 1.8rem ;
         }
     }
     &__questions {
@@ -199,6 +229,24 @@
             line-height: 1.8;
             margin: 2rem auto;
             width: 80%;
+        }
+        @include mixins.desktop {
+            width: 90%;
+            font-size: 3.8rem ;
+        }
+    }
+    &__reasons {
+        @include mixins.desktop {
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    &__reasons-hormone {
+        @include mixins.desktop {
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
         }
     }
 }
