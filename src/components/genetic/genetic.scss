@@ -4,6 +4,9 @@
 
 .genetic {
     margin: 2rem auto 8rem auto;
+    @include mixins.tablet {
+        margin: 10rem auto 8rem auto;
+    }
     &__header {
         width: 100%;
         margin: 0 auto;
@@ -19,6 +22,9 @@
         line-height: 1.4;
         letter-spacing: 0.05rem;
         margin: 0 auto;
+        @include mixins.tablet {
+            font-size: 3.5rem;
+        }
     }
     &__header-description {
         font-size: 1.3rem;
@@ -26,17 +32,30 @@
         letter-spacing: 0.05rem;
         width: 80%;
         margin: 0.5rem auto;
+        @include mixins.tablet {
+            font-size: 2rem;
+            width: 70%;
+            line-height: 1.6;
+        }
     }
     &__header-image,
     &__reason-image {
         width: 17rem;
         height: 23rem;
         border-radius: 3rem;
+        @include mixins.tablet {
+            width: 25rem;
+            height: 30rem;
+        }
     }
     &__result-image {
         width: 18rem;
         height: 100%;
         border-radius: 3rem;
+        @include mixins.tablet {
+            width: 25rem;
+            height: 25rem;
+        }
         
     }
     &__header-image-box,
@@ -59,6 +78,9 @@
     &__reason-title {
         font-size: 2rem;
         letter-spacing: 0.05rem;
+        @include mixins.tablet {
+            font-size: 2.5rem;
+        }
     }
     &__reason-title--gold {
         color: colors.$primary-gold;
@@ -68,21 +90,47 @@
         text-align: center;
         letter-spacing: 0.05rem;
         line-height: 1.2;
+        @include mixins.tablet {
+            font-size: 2rem;
+            line-height: 1.4;
+        }
     }
     &__reason-item {
         font-size: 1.2rem;
         letter-spacing: 0.05rem;
         line-height: 1.6;
+        @include mixins.tablet {
+            font-size: 1.8rem;
+            line-height: 1.8;
+            
+        }
     }
     &__reason-list{
         margin: 1rem auto;
+        @include mixins.tablet {
+            margin: 2rem auto;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+           
+            
+        }
     }
     &__reason-button-box,
     &__hormone-button-box,
     &__hormone-question-box {
         display: flex;
         justify-content: center;
-        margin: 2rem auto;  
+        margin: 2rem auto; 
+        @include mixins.tablet {
+            margin: 3rem auto;
+        } 
+    }
+    &__question-box {
+        @include mixins.tablet {
+            margin: 10rem auto;
+        }
     }
     &__reason-button,
     &__hormone-button {
@@ -97,6 +145,10 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         letter-spacing: 0.05rem;
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            padding: 0.8rem 1.5rem;
+        }
     }
     &__question-button {
         background-color: colors.$primary-gold;
@@ -109,13 +161,20 @@
         border: none;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-        letter-spacing: 0.05rem
+        letter-spacing: 0.05rem;
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            padding: 0.8rem 1.5rem;
+        }
     }
     &__hormone-title {
         font-size: 1.5rem;
         letter-spacing: 0.05rem;
         text-align: center;
         margin: 2rem auto;
+        @include mixins.tablet {
+            font-size: 2rem;
+        }
     }
     &__hormone-results {
         font-size: 1.2rem;
@@ -123,6 +182,11 @@
         line-height: 1.6;
         margin: 1rem auto;
         text-align: center;
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            width: 60%;
+        }
     }
     &__questions {
         font-size: 1.9rem;
@@ -130,5 +194,11 @@
         line-height: 1.6;
         margin: 1rem auto;
         text-align: center;
+        @include mixins.tablet {
+            font-size: 3rem;
+            line-height: 1.8;
+            margin: 2rem auto;
+            width: 80%;
+        }
     }
 }
