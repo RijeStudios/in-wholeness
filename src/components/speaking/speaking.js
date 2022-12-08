@@ -9,8 +9,8 @@ function Speaking() {
         <h3 className="speaking__title-tag" >Engaging and inspiring health & wellness speaker</h3>
       </section>
 
-      <section>
-        <figure className="speaking_image-box" >
+      <section className='speaking__row' >
+        <figure className="speaking__image-box" >
             <img src={christie} className="speaking__image" alt='christie noua a health and wellness speaker' />
         </figure>
         <article className="speaking__about-box" >
@@ -47,10 +47,10 @@ function Speaking() {
       </section>
        
       <section className="speaking__about-title" >
-        <h2 className="speaking__about" > ABOUT <span className="speaking__about--gold"> CHRISTIE NOUA</span></h2>
+        <h2 className="speaking__about-black" > ABOUT <span className="speaking__about--gold"> CHRISTIE NOUA</span></h2>
       </section>
 
-      <section className="speaking__about-box" >
+      <section className="speaking__speaker-box" >
         <article className="speaking__christie-box" >
             <h5 className="speaking__about-header" >
             Christie Noua is a board certified nutritionist, personal 
@@ -69,6 +69,7 @@ function Speaking() {
         <a className="speaking__resume" >Download Resume</a>
         <a className="speaking__resume-button" > WORK WITH ME</a>
       </section>
+      
     </main>
   );
 }
