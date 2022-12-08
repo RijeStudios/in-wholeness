@@ -1,4 +1,5 @@
-
+import './speaking.scss';
+import christie from '../../assets/images/christie.jfif' ;
 
 function Speaking() {
   return (
@@ -10,7 +11,7 @@ function Speaking() {
 
       <section>
         <figure className="speaking_image-box" >
-            <img src='' className="speaking__image" alt='christie noua a health and wellness speaker' />
+            <img src={christie} className="speaking__image" alt='christie noua a health and wellness speaker' />
         </figure>
         <article className="speaking__about-box" >
             <p className="speaking__about" >Christie Noua has inspired and educated thousands of
@@ -20,7 +21,7 @@ function Speaking() {
 
             <p className="speaking__about" > Our most requested topic is “Weight loss management”. You can also Choose from our
                 extensive list of topics or work with us to create a
-                 customised soultuion that suits your events
+                 customised soultuion that suits your event.
             </p>
 
             <section className="speaking__button-box">
@@ -31,7 +32,7 @@ function Speaking() {
       </section>
     
       <section className="speaking__topic-box" >
-        <h2 className="speaking__topic-title" >SPEAKING <span>TOPICS</span> </h2>
+        <h2 className="speaking__topic-title" >SPEAKING <span className="speaking__topic-title--gold" >TOPICS</span> </h2>
         <ul className="speaking__title-list" >
             <li className="speaking__title-item" >Lean, Mean, Green: How to loose and maintain
                 weight with a plant based lifestyle
@@ -46,7 +47,7 @@ function Speaking() {
       </section>
        
       <section className="speaking__about-title" >
-        <h2 className="speaking__about" > ABOUT <span> CHRISTIE NOUA</span></h2>
+        <h2 className="speaking__about" > ABOUT <span className="speaking__about--gold"> CHRISTIE NOUA</span></h2>
       </section>
 
       <section className="speaking__about-box" >
@@ -60,7 +61,7 @@ function Speaking() {
             </h6>
         </article>
         <figure className="speaking__christie" >
-            <img src='' className="speaking__christie-image" alt='christie noua a certified nutritionist and wellness speaker' />
+            <img src={christie} className="speaking__image" alt='christie noua a certified nutritionist and wellness speaker' />
         </figure>
       </section>
 
