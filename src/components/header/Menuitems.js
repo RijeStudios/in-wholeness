@@ -17,7 +17,7 @@
     },
     {
         title: 'SPEAKING',
-        url: '#',
+        url: '/speaking',
         cName: 'nav-links'
     },
     {
