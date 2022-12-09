@@ -270,6 +270,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 1rem auto;
+            width: 95%;
         }
         @include mixins.desktop {
             width: 90%;
