@@ -97,16 +97,14 @@
             border-radius: 4rem;
         }
         @include mixins.desktop {
-           height: 28rem;
+           height: 30rem;
            
         }
-        @include mixins.largeDesktop {
-            height: 35rem;
-        }
+       
     }
     &__image-consult {
         width: 16rem;
-        height: 20rem;
+        height: 16rem;
         border-radius: 3rem;
         @include mixins.tablet {
             width: 100%;
@@ -116,9 +114,7 @@
            height: 28rem;
            
         }
-        @include mixins.largeDesktop {
-            height: 35rem;
-        }
+        
     }
     &__image-box {
         display: flex;
