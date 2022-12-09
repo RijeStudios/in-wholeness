@@ -29,6 +29,10 @@
             width: 60%;
             font-size: 3.5rem;
         }
+        @include mixins.largeDesktop {
+            width: 50%;
+            font-size: 4rem;
+        }
        
     }
     &__title-tag {
@@ -44,6 +48,10 @@
         @include mixins.desktop {
             width: 50%;
             font-size: 1.8rem;
+        }
+        @include mixins.largeDesktop {
+            width: 40%;
+            font-size: 2rem;
         }
     }
     &__image-box{
@@ -63,6 +71,10 @@
             width: 25rem;
             height: 25rem;
         }
+        @include mixins.largeDesktop {
+            width: 28rem;
+            height: 28rem;
+        }
     }
     &__about {
         font-size: 1rem;
@@ -77,8 +89,10 @@
         }
         @include mixins.desktop {
             font-size: 1.5rem;
-            
-            
+            width: 75%;
+        }
+        @include mixins.largeDesktop {
+            width: 80%;
         }
     }
     &__about-black {
@@ -92,8 +106,12 @@
         @include mixins.tablet {
             font-size: 2rem;
             text-align: left;
-            margin: 6rem auto 1rem auto;
+            margin: 5rem auto 1rem auto;
 
+        }
+        @include mixins.largeDesktop {
+            font-size: 2.5rem;
+            margin: 1rem auto;
         }
     }
  
@@ -116,9 +134,13 @@
         transition: all 0.3s ease-in-out;
         @include mixins.tablet {
             font-size: 1.2rem;
+            letter-spacing: 0.08rem;
         }
         @include mixins.desktop {
             font-size: 1.5rem;
+        }
+        @include mixins.largeDesktop {
+            font-size: 1.8rem;
         }
     }
     &__topic-box {
@@ -158,6 +180,9 @@
             width: 65%;
             line-height: 1.8;
         }
+        @include mixins.largeDesktop {
+            width: 55%;
+        }
     }
     &__title-item::before {
         content: '〰️';
@@ -171,11 +196,16 @@
         line-height: 1.6;
         letter-spacing: 0.05rem;
         @include mixins.tablet {
+            text-align: left;
             font-size: 1.3rem;
-            width: 80%;
+            width: 85%;
+            letter-spacing: 0.08rem;
         }
         @include mixins.desktop {
             width: 85%;
+        }
+        @include mixins.largeDesktop {
+            width: 70%;
         }
     }
     &__about-tags {
@@ -188,9 +218,14 @@
         color: colors.$primary-gold;
         @include mixins.tablet {
             font-size: 1.2rem;
+            letter-spacing: 0.08rem;
+            margin: 2rem auto;
         }
         @include mixins.desktop {
-            width: 50%;
+            width: 70%;
+        }
+        @include mixins.largeDesktop {
+            text-align: left;
         }
     }
     &__resume-box {
@@ -211,6 +246,9 @@
         @include mixins.tablet {
             font-size: 1.5rem;
         }
+        @include mixins.largeDesktop {
+            font-size: 1.8rem;
+        }
     }
     &__row {
         @include mixins.tablet {
@@ -220,8 +258,11 @@
         @include mixins.desktop {
             justify-content: center;
             align-items: center;
+            width: 90%;
         }
-       
+       @include mixins.largeDesktop {
+            width: 80%;
+        }
         
     }
     &__speaker-box {
@@ -233,7 +274,11 @@
         @include mixins.desktop {
             width: 90%;
             margin: 1rem auto;
-            
+        }
+        @include mixins.largeDesktop {
+            width: 80%;
         }
     }
+    
+    
 }

@@ -46,12 +46,14 @@ function Speaking() {
         </ul>
       </section>
        
-      <section className="speaking__about-title" >
-        <h2 className="speaking__about-black" > ABOUT <span className="speaking__about--gold"> CHRISTIE NOUA</span></h2>
-      </section>
+      
 
       <section className="speaking__speaker-box" >
+        
         <article className="speaking__christie-box" >
+          <section className="speaking__about-title" >
+            <h2 className="speaking__about-black" > ABOUT <span className="speaking__about--gold"> CHRISTIE NOUA</span></h2>
+          </section>
             <h5 className="speaking__about-header" >
             Christie Noua is a board certified nutritionist, personal 
             coach and registered psychotherapist (qualifying).
