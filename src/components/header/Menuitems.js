@@ -21,6 +21,11 @@
         cName: 'nav-links'
     },
     {
+        title: 'FAQ',
+        url: '/faq',
+        cName: 'nav-links'
+    },
+    {
         title: 'CONTACT',
         url: '#',
         cName: 'nav-links'

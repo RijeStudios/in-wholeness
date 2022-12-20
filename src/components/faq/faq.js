@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import './faq.scss';
+import FaqItem from "../faqItem/faqItem";
 
 
 function FAQ() {
@@ -6,8 +9,14 @@ function FAQ() {
       }, [])
 
       return (
-        <main>
+        <main className="frequent" >
+            <section className="frequent__questions" >
+                <h1> FREQUENTLY ASKED QUESTIONS</h1>
+            </section>
 
+            <section>
+                <FaqItem/>
+            </section>
         </main>
       )
 }

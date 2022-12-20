@@ -1,6 +1,7 @@
 import './speaking.scss';
 import christie from '../../assets/images/christie.jfif' ;
 import {useEffect} from 'react';
+
 function Speaking() {
   useEffect(() => {
     window.scrollTo(0, 0)

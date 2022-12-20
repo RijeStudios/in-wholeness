@@ -20,11 +20,11 @@
         width: 12rem;
         margin: 1rem;
         @include mixins.tablet {
-            width: 15rem;
-            margin: 1rem;
+            width: 11rem;
+            margin: 1.1rem;
         }
         @include mixins.desktop {
-            width: 30rem;
+            width: 18rem;
             margin: 1rem 3rem;
         }
     }
