@@ -27,7 +27,7 @@
     },
     {
         title: 'CONTACT',
-        url: '#',
+        url: '/contact',
         cName: 'nav-links'
     }
 ]

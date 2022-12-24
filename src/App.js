@@ -8,6 +8,8 @@ import Genetic from './components/genetic/genetic';
 import Speaking from './components/speaking/speaking';
 import FAQ from './components/faq/faq';
 import NotFound from './components/Pages/NotFound';
+import Contact from './components/contact/contact';
+
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
        <Route path='/genetictesting' component={Genetic} />
        <Route path='/speaking' component={Speaking} />
        <Route path='/faq' component={FAQ} />
-       <Route path='/contact' component='' />
+       <Route path='/contact' component={Contact} />
         <Route component={NotFound} />
       </Switch>
       <Footer/>
