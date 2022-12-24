@@ -1,23 +1,46 @@
-import Accordion from 'react-bootstrap/Accordion';
+import React, {useState} from 'react';
+import { FaqItems } from './faqItems';
+ import './faqItem.scss';
+import { IconContext } from 'react-icons';
+import {FiPlus, FiMinus } from 'react-icons/fi';
+
+
 
 function FaqItem() {
-    return (
-        <Accordion alwaysOpen >
-            <Accordion.Item>
-                <Accordion.Header>
-                    I think I want a genetic consult.
-                    What does it involve?
-                </Accordion.Header>
-                <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat.
-                 
-                </Accordion.Body>
-            </Accordion.Item>
 
-        </Accordion>
+    const [clicked, setClicked] = useState(false)
+    const toggle = index => {
+        if(clicked === index) {
+            //if clicked is already active then close
+            return setClicked(null);
+        }
+        setClicked(index);
+    }
+
+    return (
+        <IconContext.Provider value={{color:'#3F7162', size:'2rem' }} >
+            <main className='accordion' >
+                <section className='accordion__body' >
+                    {FaqItems.map((item, index) => {
+                        return (
+                            <article className='accordion__item' >
+                                <section className='accordion__header' onClick={() => toggle(index)} key={index} >
+                                    <h2 className='accordion__title' >{item.title}</h2>
+                                    <span> {clicked === index ? <FiMinus/> : <FiPlus/> } </span>
+                                </section>
+                                {clicked === index ? (
+                                  <article className='accordion__dropdown' >
+                                      <p>{item.content}</p>
+                                  </article>
+                                ) : null }
+                              
+                            </article>
+                        )
+                    } )}
+                </section>
+
+            </main>
+        </IconContext.Provider>
     )
 }
 

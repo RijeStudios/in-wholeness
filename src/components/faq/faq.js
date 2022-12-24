@@ -11,7 +11,7 @@ function FAQ() {
       return (
         <main className="frequent" >
             <section className="frequent__questions" >
-                <h1> FREQUENTLY ASKED QUESTIONS</h1>
+                <h1 className="frequent__title" > FREQUENTLY ASKED QUESTIONS</h1>
             </section>
 
             <section>
