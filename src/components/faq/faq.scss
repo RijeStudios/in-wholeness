@@ -1,5 +1,21 @@
-
+@use '../../styles/partials/colors';
+@use '../../styles/partials/fonts';
+@use '../../styles/partials/mixins';
 
 .frequent {
     margin: 8rem auto ;
+    @include mixins.tablet {
+        margin: 12rem auto 4rem auto;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        text-align: center;
+        letter-spacing: 0.08rem;
+        line-height: 1.6;
+        @include mixins.tablet {
+            font-size: 2rem;
+        }
+    }
+
 }

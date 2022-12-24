@@ -18,7 +18,7 @@ function FaqItem() {
     }
 
     return (
-        <IconContext.Provider value={{color:'#3F7162', size:'2rem' }} >
+        <IconContext.Provider value={{color:'#fff', size:'2rem' }} >
             <main className='accordion' >
                 <section className='accordion__body' >
                     {FaqItems.map((item, index) => {
@@ -30,7 +30,7 @@ function FaqItem() {
                                 </section>
                                 {clicked === index ? (
                                   <article className='accordion__dropdown' >
-                                      <p>{item.content}</p>
+                                      <p className='accordion__content' >{item.content}</p>
                                   </article>
                                 ) : null }
                               
