@@ -33,17 +33,16 @@
             align-items: center;
             width: 30rem;
             flex-direction: row;
-            height: 8rem;
+            height: 2rem;
             padding: 0;
             justify-content: space-between;
         }
         @include mixins.desktop {
             width: 50rem;
-            margin: 1rem;
+            margin: 0rem;
+            // height: 4rem;
         }
-        @include mixins.largeDesktop {
-            width: 50rem;
-        }
+      
     }
     &__list.active {
         background-color: colors.$primary-green;

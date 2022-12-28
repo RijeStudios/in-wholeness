@@ -3,6 +3,8 @@ import why from '../../assets/images/why.jpg' ;
 import './home.scss';
 import Testimonials from '../testimonials/testimonials';
 import {useEffect} from 'react';
+import {Link} from "react-router-dom";
+
 
 function Home() {
     useEffect(() => {
@@ -27,7 +29,9 @@ function Home() {
                         </p>
                     </article>
                     <article className='home__button-box' >
-                        <button className='home__button' > BOOK APPOINTMENT</button>
+                        <a href='https://inwholeness.janeapp.com/' target='_blank' >
+                            <button className='home__button' > BOOK APPOINTMENT</button>
+                        </a>
                     </article>
                 </div>
                
@@ -56,7 +60,9 @@ function Home() {
                 </div>
                 
                 <article className='home__why-button-box' >
+                    <Link to='/about' >
                         <button className='home__why-button' > WHY IT WORKS</button>
+                    </Link>
                 </article>
             </section>
             <Testimonials/>

@@ -17,6 +17,12 @@ function FAQ() {
             <section>
                 <FaqItem/>
             </section>
+            <article className='genetic__question-box' >
+                <h2 className='genetic__questions' > Looking for more help?</h2>
+                <section className='genetic__hormone-question-box' > 
+                    <a className='genetic__question-button' href='https://inwholeness.janeapp.com/' target='_blank' >ASK A QUESTION</a>
+                </section>
+            </article>
         </main>
       )
 }

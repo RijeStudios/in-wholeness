@@ -58,7 +58,7 @@ useEffect(() => {
         </section>
 
         <section className='about__button-box'>
-            <a className='about__button' > BOOK APPOINTMENT</a>
+            <a className='about__button' href='https://inwholeness.janeapp.com/' target='_blank' > BOOK APPOINTMENT</a>
         </section>
 
         <article className='about__founder' >

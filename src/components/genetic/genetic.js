@@ -45,7 +45,7 @@ function Genetic() {
                         <li className='genetic__reason-item' >Depression, Anxiety & Mood swings</li>
                     </ul>
                     <section className='genetic__reason-button-box' >
-                        <a className='genetic__reason-button' > VIEW SAMPLE REPORT</a>
+                        <a className='genetic__reason-button' target='_blank' href='https://www.mydna.life/wp-content/uploads/Example-Report-Wellness-Nutrition-Diet.pdf' > VIEW SAMPLE REPORT</a>
                     </section>
 
                 </section>
@@ -67,7 +67,7 @@ function Genetic() {
                          that will move you towards wellness.
                     </h5>
                     <section className='genetic__hormone-button-box' >
-                        <a className='genetic__hormone-button' > BOOK CONSULT</a>
+                        <a className='genetic__hormone-button' href='https://inwholeness.janeapp.com/' target='_blank' > BOOK CONSULT</a>
                     </section>
                 </section>
             </article>
@@ -75,7 +75,7 @@ function Genetic() {
             <article className='genetic__question-box' >
                 <h2 className='genetic__questions' > Still have questions?</h2>
                 <section className='genetic__hormone-question-box' > 
-                    <a className='genetic__question-button' >SCHEDULE A CALL</a>
+                    <a className='genetic__question-button' href='https://inwholeness.janeapp.com/' target='_blank' >SCHEDULE A CALL</a>
                 </section>
             </article>
         </main>

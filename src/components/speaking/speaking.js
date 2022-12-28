@@ -1,6 +1,7 @@
 import './speaking.scss';
 import christie from '../../assets/images/christie.jfif' ;
 import {useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 function Speaking() {
   useEffect(() => {
@@ -29,7 +30,9 @@ function Speaking() {
             </p>
 
             <section className="speaking__button-box">
+              <Link to='/contact' className='speaking__button-link' >
                 <a className="speaking__button" > CONTACT US</a>
+              </Link>
             </section>
         </article>
 
@@ -73,7 +76,9 @@ function Speaking() {
 
       <section className="speaking__resume-box" >
         <a className="speaking__resume" >Download Resume</a>
-        <a className="speaking__resume-button" > WORK WITH ME</a>
+        <Link to='/contact' className='speaking__button-link' >
+          <a className="speaking__resume-button" > WORK WITH ME</a>
+        </Link>
       </section>
       
     </main>

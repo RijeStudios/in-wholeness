@@ -47,7 +47,7 @@ function Services() {
                          Genetic testing
                     </h5>
                     <section className='services__button-box' >
-                        <a className='services__button' >BOOK APPOINTMENT</a>
+                        <a className='services__button' href='https://inwholeness.janeapp.com/' target='_blank' >BOOK APPOINTMENT</a>
                     </section>
                 </section>
 
@@ -64,7 +64,7 @@ function Services() {
                          Fitness plans
                     </h5>
                     <section className='services__button-box' >
-                        <a className='services__button' >BOOK APPOINTMENT</a>
+                        <a className='services__button' href='https://inwholeness.janeapp.com/' target='_blank' >BOOK APPOINTMENT</a>
                     </section>
                 </section>
 
@@ -81,7 +81,7 @@ function Services() {
                          Stress, Burnout, Mental support
                     </h5>
                     <section className='services__button-box' >
-                        <a className='services__button' >BOOK APPOINTMENT</a>
+                        <a className='services__button' href='https://inwholeness.janeapp.com/' target='_blank' >BOOK APPOINTMENT</a>
                     </section>
                 </section>
 

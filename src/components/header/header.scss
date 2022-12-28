@@ -10,13 +10,14 @@
     background-color: colors.$primary-white;
     width: 100%;
     z-index: 10;
-    // @include mixins.tablet {
-    //     justify-content:flex-start;
-    // }
+    @include mixins.tablet {
+        flex-direction: column;
+    }
    
     @include mixins.maxLargeDesktop {
         justify-content: flex-start;
     }
+   
     &__logo {
         width: 12rem;
         margin: 1rem;

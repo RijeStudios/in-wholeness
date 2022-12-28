@@ -166,6 +166,7 @@
         border: none;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+        text-decoration: none;
         @include mixins.desktop {
             font-size: 1.2rem;
             padding: 0.8rem 1.5rem;

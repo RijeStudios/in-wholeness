@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import {MenuItems} from "./MenuItems";
 
+
 import './Navbar.scss';
 class Navbar extends Component {
     state = { clicked: false };
@@ -9,6 +10,7 @@ class Navbar extends Component {
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
     }
+
 
     render() {
         return (

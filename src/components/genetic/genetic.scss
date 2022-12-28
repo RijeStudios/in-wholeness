@@ -168,6 +168,7 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         letter-spacing: 0.05rem;
+        text-decoration: none;
         @include mixins.tablet {
             font-size: 1.5rem;
             padding: 0.8rem 1.5rem;
@@ -185,6 +186,7 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         letter-spacing: 0.05rem;
+        text-decoration: none;
         @include mixins.tablet {
             font-size: 1.5rem;
             padding: 0.8rem 1.5rem;
