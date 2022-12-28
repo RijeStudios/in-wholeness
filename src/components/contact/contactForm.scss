@@ -16,6 +16,9 @@
         @include mixins.tablet {
             margin: 4rem 0 0 0;
         }
+        @include mixins.desktop {
+            width: 50%;
+        }
     }
     &__form {
         position: relative;

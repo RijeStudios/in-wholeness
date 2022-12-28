@@ -2,25 +2,40 @@
 
 .footer {
 
-    // Phone Styling
+    margin: 5rem 0 0 0;
+    background-color: #dbdbdb ;
 
     &__container {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 0 0 1rem 0;
+        padding: 0 0 1rem 0;
         @include mixins.desktop {
             flex-direction: row;
             margin-top: 15rem;
         }
     }
+    &__social-title  {
+        @include mixins.desktop {
+            text-align: center;
+        }
+    }
+    &__title,
+    &__podcast-text {
+        letter-spacing: 0.08rem;
+        line-height: 1.5;
+    }
+     
 
     &__box {
         width: 100%;
+        margin: 1rem auto;
         text-align: center;
         @include mixins.desktop {
             text-align: left;
+            margin: 1rem 0 0 0.8rem;
         }
+    
     }
 
     &__center {
@@ -36,10 +51,14 @@
 
     &__list-item{
         padding: 4px 0;
+        letter-spacing: 0.05rem;
+        line-height: 1.6;
+        color: #313131;
     }
 
     &__list-image {
         width: 0.75rem;
+        margin: 0 0.5rem 0 0;
         @include mixins.tablet {
             width: 1rem;
         }
@@ -56,6 +75,7 @@
 
     &__podcast-image {
         width: 8rem;
+        margin: auto 0.5rem;
         @include mixins.tablet {
             width: 10rem;
         }
@@ -63,6 +83,9 @@
 
     &__social-box {
         margin: 0;
+        @include mixins.desktop {
+            text-align: center;
+        }
     }
 
     &__social-icon {
@@ -85,6 +108,9 @@
     &__page-service-size {
         @include mixins.tablet {
             width: 15rem;
+        }
+        @include mixins.desktop {
+            width: 10rem;
         }
     }
 }
