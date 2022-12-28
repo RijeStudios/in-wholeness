@@ -1,0 +1,122 @@
+@use '../../styles/partials/colors';
+@use '../../styles/partials/fonts';
+@use '../../styles/partials/mixins';
+
+
+.contact {
+    &__title-box {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+   
+    &__title {
+        margin: 1rem;
+        width: 70%;
+        @include mixins.tablet {
+            margin: 4rem 0 0 0;
+        }
+    }
+    &__form {
+        position: relative;
+    }
+    &__form-box {
+        position: absolute;
+        top: 2rem;
+        left: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 60%;
+        @include mixins.tablet{
+            height: 30rem;
+            left: 8rem;
+            font-size: 1.5rem;
+            letter-spacing: 0.08rem;
+        }
+        @include mixins.desktop {
+            left: 15rem;
+        }
+        @include mixins.largeDesktop {
+            left: 20rem;
+            top: 5rem;
+        }
+    }
+    &__name-box,
+    &__email-box,
+    &__message-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem auto;
+        @include mixins.tablet {
+            margin: 1rem auto;
+            width: 70%;
+        }
+        @include mixins.largeDesktop {
+            margin: 2rem auto;
+        }
+        
+    }
+    &__button-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin: 1.2rem 0 0 0;
+        position: relative;
+    }
+    &__button {
+        border-style: none;
+        padding: 0.3rem 1rem;
+        position: absolute;
+        top: 4.5rem;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #313131;
+        @include mixins.tablet {
+            font-size: 2rem;
+            letter-spacing: 0.08rem;
+        }
+    }
+    &__message-input {
+        resize: none;
+    }
+    &__name-input,
+    &__email-input,
+    &__message-input {
+        border-style: none ;
+        border-bottom: 0.05rem solid;
+        margin: 1rem 0 0 0;
+    }
+    &__image-box {
+        display: flex;
+        justify-content: center;
+    }
+    &__image {
+        width: 90%;
+        height: 30rem;
+        margin: 1rem;
+        z-index: -10;
+        @include mixins.tablet {
+            height: 40rem;
+            width: 80%;
+        }
+        @include mixins.desktop {
+            height: 50rem;
+            width: 70%;
+        }
+        @include mixins.largeDesktop {
+            width: 60%
+        }
+    }
+    &__error-name,
+    &__error-email,
+    &__error-message {
+        color: red;
+        margin: 0.5rem;
+    }
+
+}

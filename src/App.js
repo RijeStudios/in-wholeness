@@ -10,7 +10,6 @@ import FAQ from './components/faq/faq';
 import NotFound from './components/Pages/NotFound';
 import Contact from './components/contact/contact';
 
-
 function App() {
   return (
     <Router  >
