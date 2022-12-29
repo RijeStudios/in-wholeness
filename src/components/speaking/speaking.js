@@ -30,8 +30,8 @@ function Speaking() {
             </p>
 
             <section className="speaking__button-box">
-              <Link to='/contact' className='speaking__button-link' >
-                <a className="speaking__button" > CONTACT US</a>
+              <Link to='/contact' className='speaking__button-link speaking__button' >
+                CONTACT US
               </Link>
             </section>
         </article>

@@ -165,7 +165,6 @@
     }
     &__title-list {
         padding: 0;
-        list-style-type: none;
         margin: 2rem auto;
         width: 80%;
     }
@@ -187,10 +186,7 @@
             width: 55%;
         }
     }
-    &__title-item::before {
-        content: '〰️';
-        margin: 0.3rem;
-    }
+    
     &__about-header {
         font-size: 1.1rem;
         text-align: center;

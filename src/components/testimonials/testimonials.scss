@@ -6,7 +6,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-         margin: 4rem 0;
+         margin: 4rem 0 1rem 0;
         @include mixins.tablet {
             padding: 0 2.5rem;
             flex-direction: row;
@@ -31,6 +31,7 @@
         }
         @include mixins.desktop {
             flex-direction: row;
+            margin: 6rem auto 0 auto;
         }
     }
     &__title {
@@ -56,27 +57,7 @@
         }
     }
 
-    &__arrow-box {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    &__testimonies {
-        display: flex;
-        margin: 1rem 2rem;
-        @include mixins.tablet {
-            width: 30rem;
-        }
-    }
-
-    &__testimony-img-box {
-        margin: 1rem 0.5rem;
-        @include mixins.tablet {
-            display: flex;
-            align-items: center;
-        }
-    }
+    
 
     &__testimony-img {
         width: 3.5rem;
@@ -84,18 +65,36 @@
             width: 5rem;
         }
     }
-    &__testimony-box {
-        @include mixins.desktop {
-            font-size: 1.2rem;
-            line-height: 1.8rem;
-        }
-    }
+  
 
     &__testimony-container {
+        margin: 2rem  ;
+        width: 80%;
         @include mixins.tablet {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        @include mixins.desktop {
+            width: 60%;
+            margin: 1rem auto;
+        }
+    }
+    &__title-header {
+        letter-spacing: 0.08rem;
+        margin: 1rem;
+    }
+    &__testimony {
+        letter-spacing: 0.05rem; 
+        line-height: 1.6;
+        @include mixins.tablet {
+            font-size: 1.1rem ;
+            letter-spacing: 0.08rem;
+            line-height: 1.8;
+        }
+        @include mixins.desktop {
+            font-size: 1.2rem;
+            line-height: 1.9;
         }
     }
 }

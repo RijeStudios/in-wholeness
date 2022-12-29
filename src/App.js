@@ -16,7 +16,6 @@ function App() {
 
       <Header/>
       <Switch>
-
        <Route path='/' component={Home} exact  /> 
        <Route path='/about' component={About} />
        <Route path='/services' component={Services} />
@@ -26,9 +25,8 @@ function App() {
        <Route path='/contact' component={Contact} />
         <Route component={NotFound} />
       </Switch>
-      <Footer/>
-   
 
+      <Footer/>
     </Router>
   );
 }

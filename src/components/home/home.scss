@@ -169,8 +169,7 @@
     }
     &__list {
         padding: 0;
-        margin: 1rem 1.5rem;
-        list-style-type: none;
+        margin: 1rem;
         @include mixins.tablet {
             width: 100%;
         }
@@ -178,10 +177,10 @@
     &__list-item {
         font-size: 1.2rem;
         line-height: 1.8;
-        text-indent: -0.7rem;
         width: 100%;
+        letter-spacing: 0.05rem;
         @include mixins.tablet {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             line-height: 2.5;
         }
         @include mixins.desktop {
@@ -189,11 +188,7 @@
             line-height: 3;
         }
     }
-    &__list-item::before {
-        content: '〰️';
-        margin: 0.3rem;
-
-    }
+   
     &__why-box {
         width: 15rem;
         height: 15rem;
@@ -231,6 +226,8 @@
          }
     }
     &__indigenous{
+            width: 90%;
+            margin: 6rem auto;
         @include mixins.tablet {
             width: 100%;
         }
@@ -240,7 +237,7 @@
             justify-content: center;
             align-items: center;
             width: 80%;
-            margin: 0rem auto;
+            margin: 12rem auto 1rem auto;
         }
     }
     &__indigenous-title {
@@ -257,7 +254,7 @@
     }
 
     &__indigenous-text {
-        margin: 1rem;
+        margin: 1rem auto;
         font-size: 1.2rem;
         line-height: 1.8;
         text-align: center;

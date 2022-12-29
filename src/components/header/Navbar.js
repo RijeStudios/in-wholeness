@@ -1,29 +1,25 @@
-import React, {Component} from "react";
+import { useState } from "react";
 import {Link} from "react-router-dom";
 import {MenuItems} from "./MenuItems";
-
-
 import './Navbar.scss';
-class Navbar extends Component {
-    state = { clicked: false };
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
+function Navbar () {
+   const [clicked, setClicked] = useState(false);
 
-
-    render() {
+  const handleClick = () => setClicked(!clicked);
+  const closeMobileMenu = () => setClicked(false);
+    
         return (
         <nav className="navbar">
-            <section className="navbar__icon" onClick={this.handleClick} >
-                <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+            <section className="navbar__icon" onClick={handleClick} >
+                <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
             </section>
-            <ul className={this.state.clicked ? 'navbar__list active' : 'navbar__list' } >
+            <ul className={clicked ? 'navbar__list active' : 'navbar__list' } >
                 {MenuItems.map((item, index)=> {
                     return (
                         <li key={index} className="navbar__list-item" >
                             <Link className={item.cName} 
-                                to={item.url} > 
+                                to={item.url} onClick={closeMobileMenu} > 
                                 {item.title}
                             </Link>
                         </li>
@@ -35,6 +31,6 @@ class Navbar extends Component {
             </ul>
         </nav>
         );
-    }
+    
 }
 export default Navbar;
