@@ -1,0 +1,40 @@
+@use '../../styles/partials/colors';
+@use '../../styles/partials/fonts';
+@use '../../styles/partials/mixins';
+.notfound {
+    margin: 6rem auto ;
+    width: 80%;
+    @include mixins.tablet {
+        margin: 15rem auto 3rem auto;
+    }
+    @include mixins.largeDesktop {
+        width: 60%;
+    }
+    &__title {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+    &__text {
+        font-size: 1.5rem;
+        letter-spacing: 0.08rem;
+        line-height: 1.6;
+    }
+    &__link {
+        font-size: 1.2rem;
+    }
+    &__image-box {
+        width: 100%;
+        display: flex;
+        
+    }
+    &__image {
+        width: 70%;
+        margin: 1rem auto 3rem auto;
+        @include mixins.desktop {
+            width: 40%;
+        }
+        @include mixins.largeDesktop {
+            height: 10rem;
+        }
+    }
+}
