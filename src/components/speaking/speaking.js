@@ -75,9 +75,9 @@ function Speaking() {
       </section>
 
       <section className="speaking__resume-box" >
-        <a className="speaking__resume" >Download Resume</a>
+        <a className="speaking__resume" href='#' >Download Resume</a>
         <Link to='/contact' className='speaking__button-link' >
-          <a className="speaking__resume-button" > WORK WITH ME</a>
+          <button className="speaking__resume-button" > WORK WITH ME</button>
         </Link>
       </section>
       

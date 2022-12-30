@@ -42,8 +42,9 @@
             left: 15rem;
         }
         @include mixins.largeDesktop {
-            left: 20rem;
+            left: 25rem;
             top: 5rem;
+            width: 50%;
         }
     }
     &__name-box,
@@ -112,7 +113,7 @@
             width: 70%;
         }
         @include mixins.largeDesktop {
-            width: 60%
+            width: 50%
         }
     }
     &__error-name,

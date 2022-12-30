@@ -12,7 +12,7 @@ const submitForm = () => {
 
     return (
         <main className="contact" >
-           {!submit ? <ContactForm submitForm={submitForm} /> : <contactSuccess/>}
+           {!submit ? <ContactForm submitForm={submitForm} /> : <ContactSuccess/>}
            
         </main>
     )

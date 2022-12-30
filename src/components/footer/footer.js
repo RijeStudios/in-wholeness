@@ -9,6 +9,7 @@ import location from '../../assets/images/location.png';
 import email from '../../assets/images/letter.png';
 import phone from '../../assets/images/phone.png';
 import './footer.scss';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -29,8 +30,8 @@ function Footer() {
                     <section className='footer__box footer__page-service-size'>
                         <h3 className='footer__title'>Pages</h3>
                         <ul className='footer__list'>
-                            <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Home</li></a>
-                            <a href='#' className='footer__anchor-item'><li className='footer__list-item'>About</li></a>
+                            <Link to='/' className='footer__anchor-item'><li className='footer__list-item'>Home</li></Link>
+                            <Link to='/about' className='footer__anchor-item'><li className='footer__list-item'>About</li></Link>
                             <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Services</li></a>
                             <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Genetic Testing</li></a>
                             <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Speaking</li></a>
