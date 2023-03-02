@@ -1,4 +1,4 @@
-import smile from '../../assets/images/smile.jpg';
+import smile2 from '../../assets/images/smile2.jpg';
 import why from '../../assets/images/why.jpg' ;
 import './home.scss';
 import Testimonials from '../testimonials/testimonials';
@@ -15,13 +15,13 @@ function Home() {
         <main className='home' >
             <section className='home__hero' > 
                 <figure className='home__hero-box' >
-                    <img src={smile} className='home__hero-image' alt='healthy woman smiling because her condition has transformed' />
+                    <img src={smile2} className='home__hero-image' alt='healthy woman smiling because her condition has transformed' />
                 </figure>
 
                 <div className='home__main-box' > 
                     <article className='home__text-box' >
                         <h1 className='home__hero-title' >Take charge of your gut health!</h1>
-                        <p className='home__hero-text' >Do you feel like no matter what diet plan you
+                        <p className='home__hero-text' >Do you feel like no matter what food you
                             try, your condition doesn't improve?
                         </p>
                         <p className='home__hero-text' >Talk to our specialists to transform your life
@@ -46,7 +46,7 @@ function Home() {
                 </div>
 
                 <div className='home__about-box' >   
-                    <article>
+                    <article className='home__list-box' >
                         <ul className='home__list' >
                             <li className='home__list-item' >Access to Fitness programs</li>
                             <li className='home__list-item' >Scientific & Holistic approach</li>

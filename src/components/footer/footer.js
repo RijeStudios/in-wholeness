@@ -32,19 +32,19 @@ function Footer() {
                         <ul className='footer__list'>
                             <Link to='/' className='footer__anchor-item'><li className='footer__list-item'>Home</li></Link>
                             <Link to='/about' className='footer__anchor-item'><li className='footer__list-item'>About</li></Link>
-                            <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Services</li></a>
-                            <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Genetic Testing</li></a>
-                            <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Speaking</li></a>
-                            <a href='#' className='footer__anchor-item'><li className='footer__list-item'>FAQ</li></a>
+                            <Link to='/services' className='footer__anchor-item'><li className='footer__list-item'>Services</li></Link>
+                            <Link to='/genetictesting' className='footer__anchor-item'><li className='footer__list-item'>Genetic Testing</li></Link>
+                            <Link to='/speaking' className='footer__anchor-item'><li className='footer__list-item'>Speaking</li></Link>
+                            <Link href='/faq' className='footer__anchor-item'><li className='footer__list-item'>FAQ</li></Link>
                         </ul>
                     </section>
 
                     <section className='footer__box footer__page-service-size'>
                         <h3 className='footer__title'>Services</h3>
                         <ul className='footer__list'>
-                            <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Nutrition Consults</li></a>
-                            <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Personal Training</li></a>
-                            <a href='#' className='footer__anchor-item'><li className='footer__list-item'>Lifestyle Coaching</li></a>
+                            <Link to='/services' className='footer__anchor-item'><li className='footer__list-item'>Nutrition Consults</li></Link>
+                            <Link to='/services' className='footer__anchor-item'><li className='footer__list-item'>Personal Training</li></Link>
+                            <Link to='/services' className='footer__anchor-item'><li className='footer__list-item'>Lifestyle Coaching</li></Link>
                         </ul>
                     </section>
                 </div>

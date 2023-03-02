@@ -27,11 +27,14 @@
         }
      }
      &__hero-box { 
-        margin: 1rem  ;
+        margin: 1rem ;
+        display: flex;
+        justify-content: center;
      }
     &__hero-image {
         width: 15rem;
         height: 15rem;
+        object-fit: cover;
         border-radius: 1rem;
         @include mixins.tablet {
             width: 20rem;
@@ -52,7 +55,7 @@
         }
     }
     &__hero-text {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         @include mixins.tablet {
             margin: 1rem 0;
         }
@@ -97,6 +100,8 @@
     &__text-box {
         margin: 1rem;
         line-height: 1.5;
+        text-align: center;
+
         @include mixins.tablet {
             margin: 1rem 2rem 1rem 1rem;
         }
@@ -166,6 +171,9 @@
     }
     &__about-title-gold {
         color: colors.$primary-gold;
+    }
+    &__list-box {
+        margin: 0 0 0 1rem;
     }
     &__list {
         padding: 0;
