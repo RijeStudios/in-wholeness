@@ -41,8 +41,12 @@
             height: 20rem;
         }
         @include mixins.desktop {
-            width: 40rem;
-            height: 40rem;
+            width: 30rem;
+            height: 30rem;
+        }
+        @include mixins.largeDesktop {
+            width: 35rem;
+            height: 35rem;
         }
     }
     &__hero-title{
@@ -53,6 +57,9 @@
         @include mixins.desktop {
             font-size: 3.2rem;
         }
+        @include mixins.largeDesktop {
+            font-size: 3.5rem;
+        }
     }
     &__hero-text {
         font-size: 1.3rem;
@@ -62,10 +69,16 @@
         @include mixins.desktop {
             font-size: 1.8rem;
         }
+        @include mixins.largeDesktop {
+            font-size: 2rem;
+        }
     }
     &__main-box {
         @include mixins.desktop {
             width: 40%;
+        }
+        @include mixins.largeDesktop {
+            margin: 3rem 2rem 1rem 1rem;
         }
     }
     &__button-box,
@@ -74,11 +87,11 @@
         justify-content: center;
         margin-top: 1rem;
     }
-    &__button-box {
-        @include mixins.desktop {
-            justify-content: left;
-        }
-    }
+    // &__button-box {
+    //     @include mixins.desktop {
+    //         justify-content: left;
+    //     }
+    // }
     &__button,
     &__why-button {
         background-color: colors.$primary-green;
@@ -91,9 +104,13 @@
         border: none;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+        letter-spacing: 0.08rem;
         @include mixins.desktop {
             padding: 1rem 1.5rem;
             font-size: 1.2rem;
+        }
+        @include mixins.largeDesktop {
+            font-size: 1.5rem;
         }
     }
 
@@ -105,6 +122,7 @@
         @include mixins.tablet {
             margin: 1rem 2rem 1rem 1rem;
         }
+       
     }
 
     &__line-box {
@@ -168,6 +186,9 @@
         @include mixins.desktop {
             font-size: 2.5rem;
         }
+        @include mixins.largeDesktop {
+            font-size: 2.8rem;
+        }
     }
     &__about-title-gold {
         color: colors.$primary-gold;
@@ -195,6 +216,9 @@
             font-size: 1.8rem;
             line-height: 3;
         }
+        @include mixins.largeDesktop {
+            font-size: 2rem;
+        }
     }
    
     &__why-box {
@@ -219,6 +243,9 @@
         @include mixins.desktop {
             padding: 1rem 1.5rem;
             font-size: 1.2rem;
+        }
+        @include mixins.largeDesktop {
+            font-size: 1.5rem;
         }
     }
     &__why-button-box {
