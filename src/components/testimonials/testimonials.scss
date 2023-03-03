@@ -79,22 +79,41 @@
             width: 60%;
             margin: 1rem auto;
         }
+        
     }
+    // &__swiper-box {
+    //     @include mixins.largeDesktop {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //     }
+    // }
     &__title-header {
         letter-spacing: 0.08rem;
         margin: 1rem;
+        @include mixins.largeDesktop {
+            font-size: 3rem;
+        }
     }
     &__testimony {
         letter-spacing: 0.05rem; 
         line-height: 1.6;
+        margin: auto;
+        width: 70%;
         @include mixins.tablet {
             font-size: 1.1rem ;
             letter-spacing: 0.08rem;
             line-height: 1.8;
+            width: 80%;
         }
         @include mixins.desktop {
             font-size: 1.2rem;
             line-height: 1.9;
+        }
+        @include mixins.largeDesktop {
+            font-size: 1.5rem;
+            width: 90%;
+            
         }
     }
 }
