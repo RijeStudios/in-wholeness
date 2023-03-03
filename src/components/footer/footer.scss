@@ -19,13 +19,23 @@
         @include mixins.desktop {
             text-align: center;
         }
+       
     }
     &__title,
     &__podcast-text {
         letter-spacing: 0.08rem;
         line-height: 1.5;
     }
-     
+    &__title {
+        @include mixins.largeDesktop {
+            font-size: 1.5rem;
+        }
+    }
+    &__podcast-text {
+        @include mixins.largeDesktop {
+            font-size: 1.2rem;
+        }
+    }
 
     &__box {
         width: 100%;
@@ -66,6 +76,9 @@
 
     &__anchor-item {
         text-decoration: none;
+        @include mixins.largeDesktop {
+            font-size: 1.2rem;
+        }
     }
 
     &__image-box {
@@ -78,6 +91,9 @@
         margin: auto 0.5rem;
         @include mixins.tablet {
             width: 10rem;
+        }
+        @include mixins.largeDesktop {
+            width: 12rem;
         }
     }
 
@@ -93,6 +109,9 @@
         margin: 0 0.55rem;
         @include mixins.tablet {
             width: 1.5rem;
+        }
+        @include mixins.largeDesktop {
+            width: 1.8rem;
         }
     }
 

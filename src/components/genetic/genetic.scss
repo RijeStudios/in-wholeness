@@ -19,6 +19,9 @@
             justify-content: space-around;
             width: 90%;
         }
+        @include mixins.largeDesktop {
+            width: 60%;
+        }
     }
 
     &__header-title {
@@ -33,6 +36,9 @@
         }
         @include mixins.desktop {
             font-size: 4rem;
+        }
+        @include mixins.largeDesktop {
+            font-size: 4.2rem;
         }
     }
     &__header-description {
@@ -51,28 +57,39 @@
             line-height: 1.6;
             letter-spacing: 0.08rem;
         }
+        @include mixins.largeDesktop {
+            font-size: 2.2rem;
+            width: 80%;
+        }
     }
     &__header-image,
     &__reason-image {
         width: 17rem;
-        height: 23rem;
-        border-radius: 3rem;
-        @include mixins.tablet {
-            width: 25rem;
-            height: 30rem;
-        }
-        @include mixins.desktop {
-            width: 28rem;
-            height: 35rem;
-        }
-    }
-    &__result-image {
-        width: 18rem;
-        height: 100%;
+        height: 17rem;
+        object-fit: cover;
         border-radius: 3rem;
         @include mixins.tablet {
             width: 25rem;
             height: 25rem;
+        }
+        @include mixins.desktop {
+            width: 28rem;
+            height: 28rem;
+        }
+    }
+    &__result-image {
+        width: 18rem;
+        height: 18rem;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3rem;
+        @include mixins.tablet {
+            width: 25rem;
+            height: 25rem;
+        }
+        @include mixins.largeDesktop {
+            width: 30rem;
+            height: 30rem;
         }
         
     }
@@ -98,6 +115,9 @@
         letter-spacing: 0.05rem;
         @include mixins.tablet {
             font-size: 2.5rem;
+        }
+        @include mixins.largeDesktop {
+            font-size: 3rem;
         }
     }
     &__reason-title--gold {
@@ -125,6 +145,9 @@
             font-size: 1.8rem;
             line-height: 1.8;
             
+        }
+        @include mixins.largeDesktop {
+            font-size: 2rem;
         }
     }
     &__reason-list{
@@ -172,6 +195,9 @@
         @include mixins.tablet {
             font-size: 1.5rem;
             padding: 0.8rem 1.5rem;
+        }
+        @include mixins.largeDesktop {
+            font-size: 1.8rem;
         }
     }
     &__question-button {
@@ -243,12 +269,19 @@
             width: 80%;
             margin: 0 auto;
         }
+        @include mixins.largeDesktop {
+            width: 50%;
+            margin: 2rem auto 3rem auto;
+        }
     }
     &__reasons-hormone {
         @include mixins.desktop {
             display: flex;
             width: 80%;
             margin: 0 auto;
+        }
+        @include mixins.largeDesktop {
+            width: 60%;
         }
     }
 }
