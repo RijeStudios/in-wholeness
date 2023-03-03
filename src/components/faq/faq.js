@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import './faq.scss';
-import FaqItem from "../faqItem/faqItem";
+import FaqItem from "../faqItem/faqItemPage";
 
 
 function FAQ() {

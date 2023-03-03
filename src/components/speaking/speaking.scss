@@ -93,6 +93,9 @@
         }
         @include mixins.largeDesktop {
             width: 80%;
+            font-size: 1.7rem;
+            line-height: 1.9rem;
+            letter-spacing: 0.1rem;
         }
     }
     &__about-black {
@@ -183,7 +186,8 @@
             line-height: 1.8;
         }
         @include mixins.largeDesktop {
-            width: 55%;
+            width: 50%;
+            font-size: 2rem;
         }
     }
     
@@ -205,6 +209,7 @@
         }
         @include mixins.largeDesktop {
             width: 70%;
+            font-size: 1.5rem;
         }
     }
     &__about-tags {
@@ -225,6 +230,7 @@
         }
         @include mixins.largeDesktop {
             text-align: left;
+            font-size: 1.5rem;
         }
     }
     &__resume-box {
@@ -260,7 +266,7 @@
             width: 90%;
         }
        @include mixins.largeDesktop {
-            width: 80%;
+            width: 65%;
         }
         
     }
@@ -277,7 +283,7 @@
             margin: 1rem auto;
         }
         @include mixins.largeDesktop {
-            width: 80%;
+            width: 60%;
         }
     }
     

@@ -1,11 +1,11 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Header from "./components/header/header";
-import Home from "./components/home/home";
+import Home from "./components/home/homePage";
 import Footer from './components/footer/footer';
 import About from "./components/about/about";
-import Services from './components/services/services';
-import Genetic from './components/genetic/genetic';
-import Speaking from './components/speaking/speaking';
+import Services from './components/services/service';
+import Genetic from './components/genetic/genetics';
+import Speaking from './components/speaking/speakingPage';
 import FAQ from './components/faq/faq';
 import NotFound from './components/Pages/NotFound';
 import Contact from './components/contact/contact';

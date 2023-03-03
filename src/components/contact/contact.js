@@ -1,10 +1,9 @@
 import { useState } from "react";
-import ContactForm from "./contactForm";
-import ContactSuccess from "./ContactSuccess";
+import ContactForm from "./contactForms";
 import './contact.scss';
 
 function Contact() {
-const [submit, setSubmit] = useState(false);
+const [_submit, setSubmit] = useState(false);
 
 const submitForm = () => {
     setSubmit(true);
@@ -12,7 +11,7 @@ const submitForm = () => {
 
     return (
         <main className="contact" >
-           {!submit ? <ContactForm submitForm={submitForm} /> : <ContactSuccess/>}
+           <ContactForm submitForm={submitForm} />
            
         </main>
     )
